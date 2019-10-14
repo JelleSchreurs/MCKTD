@@ -1,12 +1,20 @@
+body{
+    background-image: url(../Images/alcohol-alcoholic-beverage-bar-602750.jpg);
+    background-size: cover;
+    padding: 0;
+    margin:0;
+}
 .push{
-    background: #1c1c1d;
-    width: 50%;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
+    color: #fff !important;
+    text-transform: uppercase;
     text-decoration: none;
+    background: #60a3bc;
+    padding: 50px;
+    border-radius: 50px;
     display: inline-block;
-    font-size: 120px;
+    border: none;
+    transition: all 0.4s ease 0s;
+    width: 25%;
 }
 .btn{
 
@@ -15,3 +23,16 @@
     align-items: center;
     height:600px;
 }
+.xx{
+    background: #1c1c1d;
+    background-size: cover;
+    width: 50%;
+    height: 300px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 120px; 
+}
+  
