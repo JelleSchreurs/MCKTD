@@ -1,0 +1,10 @@
+@font-face{
+    font-family: passionate relationship;
+    src: url("../Fonts/PassionateRelationship.ttf") format("truetype");
+
+    font-family: Smiley;
+    src: url("../Fonts/Smiley.ttf") format("truetype");
+
+    font-family: Smiley Regular;
+    src: url("../Fonts/Smiley_Sans_Regular_2.ttf") format("truetype");
+}

@@ -120,6 +120,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "MCKTD"
+    }
+  },
+  "defaultProject": "MCKTD",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "css"
+    }
+  }
 }
