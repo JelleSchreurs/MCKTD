@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LoadingComponent } from './loading/loading.component';
 import { StartPageComponent } from './start-page/start-page.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoadingComponent,
-    StartPageComponent
+    StartPageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule
