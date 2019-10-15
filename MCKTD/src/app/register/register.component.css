@@ -1,3 +1,10 @@
+form{
+    margin:0;
+    padding:0;
+    justify-content: center;
+    align-items: center;
+}
+
 h2{
     text-align: center;
     font-family: 'passionate relationship';
@@ -65,4 +72,11 @@ h2{
     color: #da2864;
     font-size: 12px;
     text-align: center;
+}
+
+.logo{
+    margin-top: 5em;
+    justify-content: center;
+    border:none;
+    text-transform: lowercase;
 }
