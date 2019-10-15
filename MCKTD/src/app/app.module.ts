@@ -16,7 +16,8 @@ import { from } from 'rxjs';
     StartPageComponent,
     LoginComponent,
     CocktailsComponent,
-    MocktailsComponent
+    MocktailsComponent,
+
   ],
   imports: [
     BrowserModule,
