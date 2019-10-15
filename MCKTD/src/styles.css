@@ -1,6 +1,10 @@
 body{
-    background-image: url(../src/app/Images/alcohol-alcoholic-beverage-bar-602750.jpg);
+    background-image: url(../src/app/Images/background_scholl-.jpg);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    padding: 0;
-    margin: 0;
+    height: auto;
+    width: auto;
+    position: static;
 }

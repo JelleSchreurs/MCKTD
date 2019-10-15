@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { CocktailsComponent } from './cocktails/cocktails.component';
 import { MocktailsComponent } from './mocktails/mocktails.component';
 import { from } from 'rxjs';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { from } from 'rxjs';
     LoginComponent,
     CocktailsComponent,
     MocktailsComponent,
+    HomeComponent,
 
   ],
   imports: [
