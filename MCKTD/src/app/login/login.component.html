@@ -1,24 +1,28 @@
 <h2>Login</h2>
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <div class="form-group">
+    <div class="form-group">  
         <label for="username"></label>
+        <i class="icon ion-md-log-in"></i>
         <input placeholder="username" type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
-        <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
-            <div *ngIf="f.username.errors.required">Username is required</div>
-        </div>
     </div>
+        <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+            <div class="feedback" *ngIf="f.username.errors.required">* Username is required</div>
+        </div>
+    
     <div class="form-group">
         <label for="password"></label>
+        <i class="icon ion-md-unlock"></i>
         <input placeholder="password" type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
-        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
-            <div *ngIf="f.password.errors.required">Password is required</div>
-        </div>
     </div>
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div class="feedback" *ngIf="f.password.errors.required">* Password is required</div>
+        </div>
+    
     <div class="btnGroup">
         <button [disabled]="loading" class="btn btn-primary">
             <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
             Login
         </button>
-        <a routerLink="/register" class="btn btnRegister btn-link">Register</a>
+        <button routerLink="/register" class="btn btnRegister btn-link">Sign up</button>
     </div>
 </form>
