@@ -9,6 +9,7 @@ import { StartPageComponent } from './start-page/start-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
+
 const routes: Routes = [
     { path: '', component: StartPageComponent, canActivate: [AuthGuard] },
     { path: 'login', component: LoginComponent },
