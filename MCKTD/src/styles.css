@@ -4,7 +4,10 @@
 
 body{
     background-image: url(../src/app/Images/white-cocktail.jpg);
+    background-position: center;
     background-size: cover;
     padding: 0;
     margin: 0;
+    height: 100vh;
+    width: 100vw;
 }
