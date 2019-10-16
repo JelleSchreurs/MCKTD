@@ -9,7 +9,7 @@ import { CocktailsComponent } from './cocktails/cocktails.component';
 import { MocktailsComponent } from './mocktails/mocktails.component';
 import { from } from 'rxjs';
 import { HomeComponent } from './home/home.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,10 +20,12 @@ import { HomeComponent } from './home/home.component';
     MocktailsComponent,
     HomeComponent,
 
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

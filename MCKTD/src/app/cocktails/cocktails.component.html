@@ -1,1 +1,12 @@
-<p>cocktails works!</p>
+<body>
+    <p>perfect... we 've hier the most delicious <span>KaKa</span>'s</p>
+    <ul>
+        <li *ngFor="let cocktail of cocktails" (click)="onSelect(cocktail)">
+            <span>{{cocktail.id}}</span> {{cocktail.name}}
+        </li>
+    </ul>
+
+    <div *ngIf="slecteCocktail">
+        <div>{{slecteCocktail.reciept}}</div>
+    </div>
+</body>

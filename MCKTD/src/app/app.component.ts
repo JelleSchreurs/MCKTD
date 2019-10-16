@@ -10,4 +10,5 @@ import { MocktailsComponent } from './mocktails/mocktails.component';
 })
 export class AppComponent {
   title = 'MCKTD';
+
 }
