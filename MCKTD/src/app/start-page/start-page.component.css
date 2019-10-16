@@ -5,15 +5,15 @@
     margin: 0;
 }*/
 
+/*
 div{
     display: block;
-    background-image: url(../Images/alcohol-alcoholic-beverage-bar-602750.jpg);
+    background-image: url("./assets/Images/white-cocktail.jpg");
     background-size: cover;
     padding: 0;
     margin:0;
 }
 .push{
-   
     align-items: center;
     border: 0 solid;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
@@ -33,8 +33,5 @@ div{
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388;
- }
-
-
-
-  
+}
+*/
