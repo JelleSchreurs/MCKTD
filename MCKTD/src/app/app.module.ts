@@ -18,8 +18,6 @@ import { HomeComponent } from './home/home.component';
 import { AlertComponent } from './_components';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +28,7 @@ import { JwtInterceptor, ErrorInterceptor } from './_helpers';
     MocktailsComponent,
     RegisterComponent,
     HomeComponent,
-    AlertComponent
+    AlertComponent,
 
   ],
   imports: [
