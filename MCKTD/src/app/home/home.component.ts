@@ -1,20 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-
-@Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
-})
-export class HomeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-=======
 import { first } from 'rxjs/operators';
 
 import { UserService, AuthenticationService } from '../_services';
@@ -48,4 +32,3 @@ export class HomeComponent implements OnInit {
     }
 }
 
->>>>>>> branch-jelle
