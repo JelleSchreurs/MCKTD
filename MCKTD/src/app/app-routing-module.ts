@@ -15,10 +15,10 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
 
-    { path: '**', redirectTo: '' },
-
     { path: 'cocktails', component: CocktailsComponent },
-    { path: 'mocktails', component: MocktailsComponent }
+    { path: 'mocktails', component: MocktailsComponent },
+
+    { path: '**', redirectTo: '' }
 ];
 
 export const appRoutingModule = RouterModule.forRoot(routes);
