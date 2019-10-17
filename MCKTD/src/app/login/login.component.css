@@ -1,0 +1,100 @@
+.container{
+    height: 100vh;
+    margin:0;
+    padding:10em;
+    justify-content: center;
+    align-items: center;
+    background: #1c1c1d90;
+}
+
+h2{
+    text-align: center;
+    font-family: 'passionate relationship';
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.form-group{
+    display:flex;
+    flex-direction: row;
+    border-radius:25px;
+    border: solid #16a5a3 2px;
+    background-color: #1c1c1d65;
+    margin-top: 0.5em;
+}
+
+.form-control{
+    border: none;
+    background-color: rgba(255,255,255,0);
+    margin: 0.25em;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+::placeholder{
+    color: rgba(255,255,255,0.65);
+}
+
+.btnGroup{
+    margin: 0.25em;
+    display:column;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.btn,
+.btnRegister{
+    margin-top: 0.5em;
+    width: 100%;
+    font-size: 11px;
+    border-radius:25px;
+    border: solid #16a5a3 2px;
+    background-color: #16a5a3;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+.btnRegister{
+    margin-top: 2em;
+    background: none;
+    border: none; 
+    text-decoration: none;
+}
+
+.icon {
+    background: #16a5a3;
+    border-radius: 25px 0px 0px 25px;
+    width: 50px;
+    text-align: center;
+    padding-top: 0.2em;
+}
+
+.feedback{
+    margin-top: 0.2em;
+    color: #da2864;
+    font-size: 12px;
+    text-align: center;
+}
+
+img{
+    width: 265px;
+    height: auto;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0);
+    border:none;
+    text-transform: lowercase;
+}
+
+.passwordForgot{
+    margin-top: 4em;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: underline #da2864;
+}

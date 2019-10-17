@@ -1,5 +1,15 @@
-<<<<<<< HEAD
-<app-start-page></app-start-page>
-=======
-<app-loading></app-loading>
->>>>>>> 586bd913557d782e0199e265971436830d2d43af
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div>
+</nav>
+
+
+<!-- main content container -->
+<div class="login">
+    <div class="container">
+        <alert></alert>
+        <router-outlet></router-outlet>
+    </div>
+</div>
