@@ -1,8 +1,8 @@
 <body>
     <p>perfect... we 've hier the most delicious <span>KaKa</span>'s</p>
     <ul>
-        <li *ngFor="let cocktail of cocktails" (click)="onSelect(cocktail)">
-            <span>{{cocktail.id}}</span> {{cocktail.name}}
+        <li *ngFor="let cocktail of cocktails; let i =index" (click)="onSelect(cocktail)">
+            <span>{{i+1}}</span> {{cocktail.name}}
         </li>
     </ul>
 

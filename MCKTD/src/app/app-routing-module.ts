@@ -6,9 +6,9 @@ import { HomeComponent } from './home/home.component';
 import { from } from 'rxjs';
 
 const routes: Routes = [
+    { path: '', component: HomeComponent },
     { path: 'cocktails', component: CocktailsComponent },
-    { path: 'mocktails', component: MocktailsComponent },
-    { path: '', component: HomeComponent }
+    { path: 'mocktails', component: MocktailsComponent }
 ];
 
 @NgModule({
