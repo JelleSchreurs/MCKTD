@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-import { CocktailsComponent } from './cocktails/cocktails.component';
-import { MocktailsComponent } from './mocktails/mocktails.component';
 import { Router } from '@angular/router';
 import { AuthenticationService } from './_services/authentication.service';
 
