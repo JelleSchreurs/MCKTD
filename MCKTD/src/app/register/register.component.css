@@ -7,6 +7,13 @@
     background: #1c1c1d90;
 }
 
+form{
+    margin:0;
+    padding:0;
+    justify-content: center;
+    align-items: center;
+}
+
 h2{
     text-align: center;
     font-family: 'passionate relationship';
@@ -18,8 +25,8 @@ h2{
     display:flex;
     flex-direction: row;
     border-radius:25px;
-    border: solid #16a5a3 2px;
     background-color: #1c1c1d65;
+    border: solid #16a5a3 2px;
     margin-top: 0.5em;
 }
 
@@ -55,7 +62,7 @@ h2{
 }
 
 .btnRegister{
-    margin-top: 2em;
+    margin-top: 1em;
     background: none;
     border: none; 
     text-decoration: none;
@@ -89,12 +96,4 @@ img{
     background-color: rgba(255,255,255,0);
     border:none;
     text-transform: lowercase;
-}
-
-.passwordForgot{
-    margin-top: 4em;
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
-    text-decoration: underline #da2864;
 }
