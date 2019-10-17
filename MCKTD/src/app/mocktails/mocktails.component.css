@@ -1,0 +1,11 @@
+p {
+    color:red;
+    text-align: center;
+    font-size: 70px;
+}
+span{
+    color: green;
+}
+*{
+    color: black;
+}
