@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { appRoutingModule } from './app-routing-module';
+import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
 import { LoadingComponent } from './loading/loading.component';
 import { StartPageComponent } from './start-page/start-page.component';
@@ -8,13 +8,13 @@ import { LoginComponent } from './login/login.component';
 import { CocktailsComponent } from './cocktails/cocktails.component';
 import { MocktailsComponent } from './mocktails/mocktails.component';
 import { from } from 'rxjs';
+import { HomeComponent } from './home/home.component';
 
 
 import { fakeBackendProvider } from './_helpers/fake-backend';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
-import { HomeComponent } from './home/home.component';
 import { AlertComponent } from './_components';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 
@@ -33,7 +33,7 @@ import { JwtInterceptor, ErrorInterceptor } from './_helpers';
   ],
   imports: [
     BrowserModule,
-    appRoutingModule,
+    AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule
   ],

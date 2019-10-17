@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
 
+import { RouterModule, Router } from '@angular/router';
 @Component({
   selector: 'app-start-page',
   templateUrl: './start-page.component.html',
@@ -17,7 +17,7 @@ export class StartPageComponent implements OnInit {
     this.router.navigate(['/mocktails']);
   }
 
-  ngOnInit() {
-  }
+
+  ngOnInit() { }
 
 }

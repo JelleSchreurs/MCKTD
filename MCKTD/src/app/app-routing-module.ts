@@ -2,6 +2,7 @@ import { NgModule, Component } from '@angular/core';
 import { CocktailsComponent } from './cocktails/cocktails.component';
 import { MocktailsComponent } from './mocktails/mocktails.component';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 import { from } from 'rxjs';
 
 import { AuthGuard } from './_helpers';
@@ -17,8 +18,12 @@ const routes: Routes = [
 
     { path: 'cocktails', component: CocktailsComponent },
     { path: 'mocktails', component: MocktailsComponent },
-
-    { path: '**', redirectTo: '' }
+    { path: '', component: HomeComponent }
 ];
 
-export const appRoutingModule = RouterModule.forRoot(routes);
+@NgModule({
+    imports: [RouterModule.forRoot(routes)],
+
+    exports: [RouterModule]
+})
+export class AppRoutingModule { }
