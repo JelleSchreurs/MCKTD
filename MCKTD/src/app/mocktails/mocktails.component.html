@@ -1,10 +1,6 @@
-<h2>{{title}}</h2>
+<p>perfect... we 've hier the most delicious <span>PiPi</span>'s</p>
 <ul>
-    <li *ngFor="let mocktail of mocktails">
-        {{mocktail.name}}
+    <li *ngFor="let mocktail of mocktails; let i =index" (click)="onSelect(mocktail)">
+        <span>{{i+1}}</span> {{mocktail.name}}
     </li>
 </ul>
-
-<div *ngIf="selectedMocktail">
-    <p>{{selectedMocktail}}</p>
-</div>
