@@ -4,9 +4,8 @@ p {
     font-size: 70px;
 }
 span{
-    color: rgb(0, 0, 0);
+    color: green;
 }
-
-li{
-    color: #000;
+*{
+    color: black;
 }

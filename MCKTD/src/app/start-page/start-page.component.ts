@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { RouterModule, Router } from '@angular/router';
-import { HomeComponent } from './../home/home.component';
 @Component({
   selector: 'app-start-page',
   templateUrl: './start-page.component.html',
@@ -9,14 +7,8 @@ import { HomeComponent } from './../home/home.component';
 })
 export class StartPageComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor() { }
 
-  ButtonClickCocktails(): void {
-    this.router.navigate(['/cocktails']);
-  }
-  ButtonClickMocktails(): void {
-    this.router.navigate(['/mocktails']);
-  }
 
 
   ngOnInit() { }

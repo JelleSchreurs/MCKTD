@@ -1,9 +1,14 @@
 p {
-    color:black;
+    color:red;
     text-align: center;
     font-size: 70px;
 }
-
-span,strong{
-    color: red;
+span{
+    color: green;
+}
+*{
+    color: black;
+}
+strong{
+    cursor: pointer;
 }
