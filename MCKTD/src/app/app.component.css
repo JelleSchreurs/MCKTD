@@ -5,6 +5,29 @@
     justify-content: center;
     align-items: center;
 }
+
 #logout{
-float: right;
+    margin-left: auto;
+}
+
+.navbar {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background: linear-gradient(#1c1c1d, #1c1c1d65) bottom;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    padding: 0 10%;
+}
+
+.nav-item{
+    padding: 0.7em;
+    justify-content: space-around;
 }
