@@ -70,8 +70,11 @@ h2{
 }
 
 .feedback{
-    margin-top: 0.2em;
-    color: #da2864;
+    border-radius: 25px;
+    margin-top: 0.4em;
+    padding: 0.3em;
+    background: #DA286480;
+    color: #ffffff95;
     font-size: 12px;
     text-align: center;
 }

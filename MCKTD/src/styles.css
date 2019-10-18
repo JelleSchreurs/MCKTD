@@ -6,6 +6,7 @@
     outline: none;
 }
 
+
 body{
     background-image: url("./assets/Images/white-cocktail.jpg");
     background-position: center;
@@ -14,4 +15,3 @@ body{
     margin: 0;
     overflow: hidden;
 }
-
