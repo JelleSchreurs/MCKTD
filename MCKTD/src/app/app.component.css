@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-#logout{
+.logout{
     margin-left: auto;
 }
 
@@ -14,7 +14,7 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    height: 8%;
+    height: 9%;
     width: 100%;
     position: fixed;
     margin:0;
@@ -22,7 +22,16 @@
     top:0;
     left:0;
     z-index: 9999;
-    background: #1c1c1d65;
+    font-family: 'passionate relationship';
+    font-size: 36px;
+    font-weight: 300;
+    background: #9AE1E2;
+    overflow: hidden;
+}
+.item{
+    padding: 0.7em;
+    justify-content: space-around;
+    text-decoration: none;
 }
 
 .navbar-nav{
@@ -31,7 +40,13 @@
     padding: 0 10%;
 }
 
-.nav-item{
-    padding: 0.7em;
-    justify-content: space-around;
+.nav-item:hover,
+.nav-item:active{
+    background: #16a5a3;
+    transition: 2s;
+}
+
+.nav-link:link,
+.nav-link:visited{
+    text-decoration: underline #9AE1E2;
 }
