@@ -1,56 +1,63 @@
 import { Cocktail } from './cocktails-module';
 
 export const COCKTAILS: Cocktail[] = [
-    { name: 'Bangkok Denpasar', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/BangkokDenpasar.jpg'},
-    { name: 'Bitter Orange Mule', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/BitterOrangeMule.jpg'},
+    {id: 1, name: 'Bangkok Denpasar', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/BangkokDenpasar.jpg'},
     // tslint:disable-next-line: max-line-length
-    { name: 'Blue Birds Fly To London', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/BlueBirdsFlyToLondon.jpg'},
-    { name: 'ButterFly', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/ButterFly.jpg'  },
-    { name: 'Coconut White Rasta', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/CoconutWhiteRasta.jpg'},
-    { name: 'Coniferous Fores', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/ConiferousForest.jpg'},
-    { name: 'Cover Club Twist', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/CoverClubTwist.jpg'},
+    {id: 2, name: 'Bitter Orange Mule', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/BitterOrangeMule.jpg'},
     // tslint:disable-next-line: max-line-length
-    { name: 'Crimson & Clover Club', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/CrimsonAndCloverClub.jpg'},
-    { name: 'Diamond Spritz', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/DiamondSpritz.jpg'},
-    { name: 'Fille de Berlin', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/FilleDeBerlin⁠.jpg'},
-    { name: 'Gin Ginger Daisy', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/GinGingerDaisy.jpg'},
-    { name: 'Gin Sour Twist', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/GinSourTwist.jpg'},
+    {id: 3, name: 'Blue Birds Fly To London', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/BlueBirdsFlyToLondon.jpg'},
+    {id: 4, name: 'ButterFly', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/ButterFly.jpg'  },
     // tslint:disable-next-line: max-line-length
-    { name: 'Harvey WallBanger Twist', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/HarveyWallbangerTwist.jpg'},
-    { name: 'Ichigo Rosé', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/IchigoRose.jpg'},
+    {id: 5, name: 'Coconut White Rasta', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/CoconutWhiteRasta.jpg'},
     // tslint:disable-next-line: max-line-length
-    { name: 'Mostly a Northern Song', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/MostlyANorthernSong⁣⁠.jpg'},
-    { name: 'Mr Shulze\'s Sour', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/MrShulzeSour.jpg'},
-    { name: 'N/A', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/NA.jpg'},
-    { name: 'New York Sour', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/NewYorkSour.jpg'},
+    {id: 6, name: 'Coniferous Fores', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/ConiferousForest.jpg'},
+    {id: 7, name: 'Cover Club Twist', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/CoverClubTwist.jpg'},
     // tslint:disable-next-line: max-line-length
-    { name: 'Nordic Mule', recipe: '1.5 oz aquavit .75 oz ginger liqueur .75 oz lime juice Top with equal parts cucumber soda (Mr. Qcumber) and sparkling water. Shake first three ingredients with ice and strain into a tall glass filled with ice. Top with cucumber soda and sparking water. Garnish with cucumber and rosemary.' , garnish: '/', imageUrl: '/MCKTD/src/assets/Images/NordicMule.jpg'},
-    { name: 'Odyssee', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/Odyssee.jpg'},
+    {id: 8, name: 'Crimson & Clover Club', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/CrimsonAndCloverClub.jpg'},
+    {id: 9, name: 'Diamond Spritz', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/DiamondSpritz.jpg'},
+    {id: 10, name: 'Fille de Berlin', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/FilleDeBerlin⁠.jpg'},
+    {id: 11, name: 'Gin Ginger Daisy', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/GinGingerDaisy.jpg'},
+    {id: 12, name: 'Gin Sour Twist', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/GinSourTwist.jpg'},
     // tslint:disable-next-line: max-line-length
-    { name: 'Old Fashioned', recipe: 'Vodka infused with Butterfly Pea Tea 45 ml, Home made Cinnamon/Red apple syrup 15, Lime juice 15, Clarified Apple fresh 45', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/OldFashioned.jpg'},
-    { name: 'Other Worldly', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/OtherWorldly.jpg'},
-    { name: 'Passion Jungle', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/PassionJungle.jpg'},
-    { name: 'Pink Cosmo', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/PinkCosmo.jpg'},
+    {id: 13, name: 'Harvey WallBanger Twist', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/HarveyWallbangerTwist.jpg'},
+    {id: 14, name: 'Ichigo Rosé', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/IchigoRose.jpg'},
     // tslint:disable-next-line: max-line-length
-    { name: 'Queen\'s Park Swizzle', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/QueenSParkSwizzle⁠.jpg'},
-    { name: 'Red Light District', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/RedLightDistrict.jpg'},
-    { name: 'Risque Business', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/RisqueBusiness.jpg'},
-    { name: 'Roku Sour', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/RokuSour.jpg'},
-    { name: 'Soa Paulo Swizzle', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/SaoPauloSwizzle.jpg'},
-    { name: 'Signature Style', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/SignatureStyle.jpg'},
-    { name: 'Silver Monk', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/SilverMonk.jpg'},
-    { name: 'Smoked Dates', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/SmokedDates.jpg'},
+    {id: 15, name: 'Mostly a Northern Song', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/MostlyANorthernSong⁣⁠.jpg'},
+    {id: 16, name: 'Mr Shulze\'s Sour', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/MrShulzeSour.jpg'},
+    {id: 17, name: 'N/A', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/NA.jpg'},
+    {id: 18, name: 'New York Sour', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/NewYorkSour.jpg'},
     // tslint:disable-next-line: max-line-length
-    { name: 'Something WIth Whiskey Or Rum', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/SomethingWithWhiskeyOrRum.jpg'},
+    {id: 19, name: 'Nordic Mule', recipe: '1.5 oz aquavit .75 oz ginger liqueur .75 oz lime juice Top with equal parts cucumber soda (Mr. Qcumber) and sparkling water. Shake first three ingredients with ice and strain into a tall glass filled with ice. Top with cucumber soda and sparking water. Garnish with cucumber and rosemary.' , garnish: '/', imageUrl: '/MCKTD/src/assets/Images/NordicMule.jpg'},
+    {id: 20, name: 'Odyssee', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/Odyssee.jpg'},
     // tslint:disable-next-line: max-line-length
-    { name: 'Southpaw', recipe: 'Belvedere, Absenteroux, ’cool’, cordial', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/Southpaw.jpg'},
-    { name: 'Story Teller', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/StoryTeller.jpg'},
+    {id: 21, name: 'Old Fashioned', recipe: 'Vodka infused with Butterfly Pea Tea 45 ml, Home made Cinnamon/Red apple syrup 15, Lime juice 15, Clarified Apple fresh 45', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/OldFashioned.jpg'},
+    {id: 22, name: 'Other Worldly', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/OtherWorldly.jpg'},
+    {id: 23, name: 'Passion Jungle', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/PassionJungle.jpg'},
+    {id: 24, name: 'Pink Cosmo', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/PinkCosmo.jpg'},
     // tslint:disable-next-line: max-line-length
-    { name: 'The Georgetown Demerare Rum Slinger', recipe: 'this is my reciept', garnish: 'posh cucumber ribbon/viola flower trumpet thing.', imageUrl: '/MCKTD/src/assets/Images/TheGeorgetownDemeraraRumSling⁠.jpg'},
-    { name: 'Theo Broma', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/TheoBrama.jpg'},
-    { name: 'Tiki', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/Tiki.jpg'},
-    { name: 'Trappin In Heaven', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/TrappinInHeaven.jpg'},
-    { name: 'Tungus', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/Tungus.jpg'},
-    { name: 'Very Supersticious', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/VerySupersticious.jpg'},
-    { name: 'VioletFizz', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/VioletFizz.jpg'}
+    {id: 25, name: 'Queen\'s Park Swizzle', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/QueenSParkSwizzle⁠.jpg'},
+    // tslint:disable-next-line: max-line-length
+    {id: 26, name: 'Red Light District', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/RedLightDistrict.jpg'},
+    {id: 27, name: 'Risque Business', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/RisqueBusiness.jpg'},
+    {id: 28, name: 'Roku Sour', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/RokuSour.jpg'},
+    // tslint:disable-next-line: max-line-length
+    {id: 29, name: 'Soa Paulo Swizzle', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/SaoPauloSwizzle.jpg'},
+    {id: 30, name: 'Signature Style', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/SignatureStyle.jpg'},
+    {id: 31, name: 'Silver Monk', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/SilverMonk.jpg'},
+    {id: 32, name: 'Smoked Dates', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/SmokedDates.jpg'},
+    // tslint:disable-next-line: max-line-length
+    {id: 33, name: 'Something WIth Whiskey Or Rum', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/SomethingWithWhiskeyOrRum.jpg'},
+    // tslint:disable-next-line: max-line-length
+    {id: 34, name: 'Southpaw', recipe: 'Belvedere, Absenteroux, ’cool’, cordial', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/Southpaw.jpg'},
+    {id: 35, name: 'Story Teller', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/StoryTeller.jpg'},
+    // tslint:disable-next-line: max-line-length
+    {id: 36, name: 'The Georgetown Demerare Rum Slinger', recipe: 'this is my reciept', garnish: 'posh cucumber ribbon/viola flower trumpet thing.', imageUrl: '/MCKTD/src/assets/Images/TheGeorgetownDemeraraRumSling⁠.jpg'},
+    {id: 37, name: 'Theo Broma', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/TheoBrama.jpg'},
+    {id: 38, name: 'Tiki', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/Tiki.jpg'},
+    // tslint:disable-next-line: max-line-length
+    {id: 39, name: 'Trappin In Heaven', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/TrappinInHeaven.jpg'},
+    {id: 40, name: 'Tungus', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/Tungus.jpg'},
+    // tslint:disable-next-line: max-line-length
+    {id: 41, name: 'Very Supersticious', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/VerySupersticious.jpg'},
+    {id: 42, name: 'VioletFizz', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/VioletFizz.jpg'}
 ];
