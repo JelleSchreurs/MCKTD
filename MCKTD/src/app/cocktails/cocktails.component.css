@@ -20,3 +20,7 @@
     margin-top: 10em;
     padding: 0 8em;
 }
+
+li{
+    list-style-type: none;
+}

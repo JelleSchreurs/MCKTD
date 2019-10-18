@@ -9,7 +9,7 @@
         <div class="form-group">  
         <label for="username"></label>
             <i class="icon ion-md-log-in"></i>
-            <input placeholder="username" type="text" autocomplete="new-username" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+            <input placeholder="username" type="text" autocomplete="new-username" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" maxlength="20"/>
         </div>
             <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
                 <div class="feedback" *ngIf="f.username.errors.required">* Username is required</div>
@@ -18,7 +18,7 @@
         <div class="form-group">
             <label for="password"></label>
             <i class="icon ion-md-unlock"></i>
-            <input placeholder="password" type="password" autocomplete="new-password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+            <input placeholder="password" type="password" autocomplete="new-password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" maxlength="15"/>
         </div>
             <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
                 <div class="feedback" *ngIf="f.password.errors.required">* Password is required</div>

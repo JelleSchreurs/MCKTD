@@ -10,7 +10,7 @@
             <div class="form-group">
                 <label for="firstName"></label>
                 <i class="icon ion-md-contact"></i>
-                <input placeholder="firstname" type="text" formControlName="firstName" autocomplete="new-firstname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                <input placeholder="firstname" type="text" formControlName="firstName" autocomplete="new-firstname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" maxlength="15"/>
             </div>
                 <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
                     <div class="feedback" *ngIf="f.firstName.errors.required">* First Name is required</div>
@@ -19,7 +19,7 @@
             <div class="form-group">
                 <label for="lastName"></label>
                 <i class="icon ion-md-folder"></i>
-                <input placeholder="lastname" type="text" formControlName="lastName" autocomplete="new-lastname"class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                <input placeholder="lastname" type="text" formControlName="lastName" autocomplete="new-lastname"class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" maxlength="20"/>
             </div>
                 <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
                     <div class="feedback" *ngIf="f.lastName.errors.required">* Last Name is required</div>
@@ -28,7 +28,7 @@
             <div class="form-group">
                 <label for="lastName"></label>
                 <i class="icon ion-md-send"></i>
-                <input placeholder="email" type="email" formControlName="email" autocomplete="new-email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                <input placeholder="email" type="email" formControlName="email" autocomplete="new-email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" maxlength="35"/>
             </div>
                 <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
                     <div class="feedback" *ngIf="f.email.errors.required">* E-mail is required</div>
@@ -37,7 +37,7 @@
             <div class="form-group">
                 <label for="username"></label>
                 <i class="icon ion-md-log-in"></i>
-                <input placeholder="username" type="text" formControlName="username"  autocomplete="new-username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                <input placeholder="username" type="text" formControlName="username"  autocomplete="new-username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" maxlength="20"/>
             </div>
                 <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
                     <div class="feedback" *ngIf="f.username.errors.required">* Username is required</div>
@@ -46,7 +46,7 @@
             <div class="form-group">
                 <label for="password"></label>
                 <i class="icon ion-md-finger-print"></i>
-                <input placeholder="password" type="password" formControlName="password" autocomplete="new-password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                <input placeholder="password" type="password" formControlName="password" autocomplete="new-password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" maxlength="15"/>
             </div>
                 <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
                     <div class="feedback" *ngIf="f.password.errors.required">* Password is required</div>
@@ -56,7 +56,7 @@
             <div class="form-group">
                 <label for="confirmPassword"></label>
                 <i class="icon ion-md-unlock"></i>
-                <input placeholder="repeat password" type="password" formControlName="confirmPassword" autocomplete="new-confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" />
+                <input placeholder="repeat password" type="password" formControlName="confirmPassword" autocomplete="new-confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" maxlength="15" />
             </div>
                 <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
                     <div class="feedback" *ngIf="f.confirmPassword.errors.required">* Confirm Password is required</div>
