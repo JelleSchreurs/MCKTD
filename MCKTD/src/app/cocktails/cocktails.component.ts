@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { COCKTAILS } from './../cocktails-list';
-import { Cocktail } from './../cocktails-module';
+import { COCKTAILS } from '../_class/cocktails-list';
+import { Cocktail } from '../_class/cocktails-module';
 
 
 @Component({
