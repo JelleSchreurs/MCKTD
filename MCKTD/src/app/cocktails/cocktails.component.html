@@ -1,5 +1,5 @@
-<div>
-    <p>perfect... we 've hier the most delicious <span>KaKa</span>'s</p>
+<div class="cocktailsContainer">
+    <p class="mcktdCocktails">We at <span class="green">MCKTD</span> introduce you the most delicious <span class="green">Cocktails.</span></p>
     <ul>
         <li *ngFor="let cocktail of cocktails; let i =index" (click)="onSelect(cocktail)">
             <span>{{i+1}}</span> {{cocktail.name}}

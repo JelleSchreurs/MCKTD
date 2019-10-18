@@ -25,9 +25,10 @@
     font-family: 'passionate relationship';
     font-size: 36px;
     font-weight: 300;
-    background: #9AE1E2;
+    background: #16a5a3;
     overflow: hidden;
 }
+
 .item{
     padding: 0.7em;
     justify-content: space-around;
@@ -37,16 +38,16 @@
 .navbar-nav{
     display: flex;
     flex-direction: row;
-    padding: 0 10%;
+    padding: 2% 6%;
 }
 
 .nav-item:hover,
 .nav-item:active{
-    background: #16a5a3;
+    background: #9AE1E2;
     transition: 2s;
 }
 
 .nav-link:link,
 .nav-link:visited{
-    text-decoration: underline #9AE1E2;
+    text-decoration: underline #16a5a3;
 }

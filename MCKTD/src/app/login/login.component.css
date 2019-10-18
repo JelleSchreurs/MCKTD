@@ -1,10 +1,25 @@
+.loginContainer{
+    background-image: url(/assets/Images/white-cocktail.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
 .container{
     height: 100vh;
     margin:0;
-    padding:10em;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #1c1c1d90;
+}
+
+form{
+    padding:0 10em;
+    justify-content: center;
+    align-items: center;
 }
 
 h2{
@@ -80,7 +95,6 @@ h2{
 }
 
 img{
-    margin-top: 5em;
     width: 265px;
     height: auto;
 }
