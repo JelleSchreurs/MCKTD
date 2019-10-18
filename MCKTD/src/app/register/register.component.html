@@ -1,10 +1,12 @@
 <section class="container">
+
     <div class="form-group logo">
         <img src="./assets/Images/MCKTD-Logo-White-1000px.png" alt="MCKTD Logo">
     </div>
 
     <h2>Register</h2>
     <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
         <div class="form-group">
             <label for="firstName"></label>
             <i class="icon ion-md-contact"></i>
@@ -13,6 +15,7 @@
             <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
                 <div class="feedback" *ngIf="f.firstName.errors.required">*First Name is required</div>
             </div>
+
         <div class="form-group">
             <label for="lastName"></label>
             <i class="icon ion-md-folder"></i>
@@ -21,6 +24,7 @@
             <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
                 <div class="feedback" *ngIf="f.lastName.errors.required">*Last Name is required</div>
             </div>
+
         <div class="form-group">
             <label for="lastName"></label>
             <i class="icon ion-md-send"></i>
@@ -29,6 +33,7 @@
             <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
                 <div class="feedback" *ngIf="f.email.errors.required">*E-mail is required</div>
             </div>
+
         <div class="form-group">
             <label for="username"></label>
             <i class="icon ion-md-log-in"></i>
@@ -37,6 +42,7 @@
             <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
                 <div class="feedback" *ngIf="f.username.errors.required">*Username is required</div>
             </div>
+
         <div class="form-group">
             <label for="password"></label>
             <i class="icon ion-md-finger-print"></i>
@@ -46,6 +52,17 @@
                 <div class="feedback" *ngIf="f.password.errors.required">*Password is required</div>
                 <div class="feedback"*ngIf="f.password.errors.minlength">*Password must be at least 6 characters</div>
             </div>
+        
+        <div class="form-group">
+            <label for="confirmPassword"></label>
+            <i class="icon ion-md-unlock"></i>
+            <input placeholder="repeat password" type="password" formControlName="confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" />
+        </div>
+            <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                <div class="feedback" *ngIf="f.confirmPassword.errors.required">Confirm Password is required</div>
+                <div class="feedback" *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div>
+            </div>
+
         <div class="btnGroup">
             <button [disabled]="loading" class="btn btn-primary">
                 <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
