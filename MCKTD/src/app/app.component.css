@@ -17,8 +17,12 @@
     height: 8%;
     width: 100%;
     position: fixed;
+    margin:0;
+    padding: 0;
+    top:0;
+    left:0;
     z-index: 9999;
-    background: linear-gradient(#1c1c1d, #1c1c1d65) bottom;
+    background: #1c1c1d65;
 }
 
 .navbar-nav{
