@@ -1,14 +1,26 @@
-p {
-    color:red;
-    text-align: center;
-    font-size: 70px;
-}
-span{
-    color: green;
-}
 *{
-    color: black;
+    color: #1c1c1d;
 }
-strong{
-    cursor: pointer;
+
+.green{
+    font-family: 'passionate relationship';
+    font-size: 164px;
+    color: #16A5A3;
+}
+
+.mcktdCocktails{
+    font-family: 'smiley regular';
+    font-size: 128px;
+    text-align: center;
+    padding: 0 2em;
+    margin-bottom: 0.5em;
+}
+
+.homeContainer{
+    margin-top: 10em;
+    padding: 0 8em;
+}
+
+li{
+    list-style-type: none;
 }
