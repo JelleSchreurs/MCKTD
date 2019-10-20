@@ -1,12 +1,13 @@
 import { Cocktail } from './cocktails-module';
 
 export const COCKTAILS: Cocktail[] = [
-    {id: 1, name: 'Bangkok Denpasar', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/BangkokDenpasar.jpg'},
     // tslint:disable-next-line: max-line-length
-    {id: 2, name: 'Bitter Orange Mule', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/BitterOrangeMule.jpg'},
+    {id: 1, name: 'Bangkok Denpasar', recipe: 'this is my reciept', garnish: '/', imageUrl: ('../../assets/Images/BangkokDenpasar.jpg')},
     // tslint:disable-next-line: max-line-length
-    {id: 3, name: 'Blue Birds Fly To London', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/BlueBirdsFlyToLondon.jpg'},
-    {id: 4, name: 'ButterFly', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/ButterFly.jpg'  },
+    {id: 2, name: 'Bitter Orange Mule', recipe: 'this is my reciept', garnish: '/', imageUrl: '../../assets/Images/BitterOrangeMule.jpg'},
+    // tslint:disable-next-line: max-line-length
+    {id: 3, name: 'Blue Birds Fly To London', recipe: 'this is my reciept', garnish: '/', imageUrl: '../../assets/Images/BlueBirdsFlyToLondon.jpg'},
+    {id: 4, name: 'ButterFly', recipe: 'this is my reciept', garnish: '/', imageUrl: '../MCKTD/src/assets/Images/ButterFly.jpg'  },
     // tslint:disable-next-line: max-line-length
     {id: 5, name: 'Coconut White Rasta', recipe: 'this is my reciept', garnish: '/', imageUrl: '/MCKTD/src/assets/Images/CoconutWhiteRasta.jpg'},
     // tslint:disable-next-line: max-line-length
