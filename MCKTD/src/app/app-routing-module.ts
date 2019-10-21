@@ -8,6 +8,7 @@ import { from } from 'rxjs';
 import { AuthGuard } from './_helpers';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
 
     { path: 'cocktails', component: CocktailsComponent },
     { path: 'mocktails', component: MocktailsComponent },
+    { path: 'user_profile', component: UserProfileComponent},
 
     { path: '**', redirectTo: '' }
 ];

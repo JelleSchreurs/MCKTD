@@ -10,6 +10,24 @@
     margin-left: auto;
 }
 
+.logout:hover{
+    background-color: #da2864;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.username{
+    margin-left: 69.1%;
+    background-color: #fff;
+    color: #16a5a3;
+}
+
+.username:hover{
+    background-color: #9AE1E2;
+    color: #fff;
+    transition: 1s;
+}
+
 .navbar {
     display:flex;
     flex-direction: column;
