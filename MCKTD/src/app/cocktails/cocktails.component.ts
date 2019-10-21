@@ -12,18 +12,18 @@ import { COCKTAILS } from './../_class/cocktails-list';
   styleUrls: ['./cocktails.component.css']
 })
 export class CocktailsComponent implements OnInit {
-  cocktails: Cocktail[];
+
+  cocktails = COCKTAILS;
   selectedCocktail: Cocktail;
-  constructor(/*private cocktailsService: CocktailsService*/) { }
-  router: Router[];
+
+  constructor() { }
+
   ngOnInit() {
     //this.getCocktails();
   }
-  //getCocktails(): void {
-  //  this.cocktailsService.getCocktails().subscribe(cocktails => this.cocktails = cocktails);
-  // }
-
-  onselect(cocktail: Cocktail): void {
-    this.router.navigate(['/cocktailsRecipe', this.selectedCocktail.id]);
+  onSelect(cocktail: Cocktail): void {
+    this.selectedCocktail = cocktail;
   }
+
+
 }

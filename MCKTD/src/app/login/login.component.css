@@ -1,17 +1,33 @@
+.loginContainer{
+    background-image: url(/assets/Images/white-cocktail.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
 .container{
     height: 100vh;
     margin:0;
-    padding:10em;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #1c1c1d90;
 }
 
+form{
+    padding:0 10em;
+    justify-content: center;
+    align-items: center;
+}
+
 h2{
     text-align: center;
     font-family: 'passionate relationship';
-    font-size: 48px;
+    font-size: 62px;
     font-weight: 300;
+    margin-bottom: 1em;
 }
 
 .form-group{
@@ -28,7 +44,7 @@ h2{
     background-color: rgba(255,255,255,0);
     margin: 0.25em;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 ::placeholder{
@@ -70,15 +86,17 @@ h2{
 }
 
 .feedback{
-    margin-top: 0.2em;
-    color: #da2864;
+    border-radius: 25px;
+    margin-top: 0.4em;
+    padding: 0.3em;
+    background: #DA286480;
+    color: #ffffff95;
     font-size: 12px;
     text-align: center;
 }
 
 img{
-    margin-top: 5em;
-    width: 265px;
+    width: 300px;
     height: auto;
 }
 
