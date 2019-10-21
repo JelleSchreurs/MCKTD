@@ -1,12 +1,9 @@
 <div>
     <p>perfect... we 've hier the most delicious <span>KaKa</span>'s</p>
-    <ul>
-        <li *ngFor="let cocktail of cocktails; let i =index" (click)="onSelect(cocktail)">
-            <span>{{i+1}}</span> {{cocktail.name}}
+    <ul [routerLink]="['/cocktail', cocktail.id]">
+        <li *ngFor="let cocktail of cocktails" (click)="btnClick">
+            <!-- <span>
+                {{cocktail.id}}</span>--> {{cocktail.name}}
         </li>
     </ul>
-
-    <div *ngIf="slecteCocktail">
-        <div>{{slecteCocktail.reciept}}</div>
-    </div>
 </div>

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { COCKTAILS } from '../_class/cocktails-list';
-import { Cocktail } from '../_class/cocktails-module';
+
+import { Cocktail } from './../_class/cocktails-module';
+import { CocktailsService } from './../cocktails.service';
+import { Router } from '@angular/router';
+import { COCKTAILS } from './../_class/cocktails-list';
 
 
 @Component({
@@ -9,16 +12,18 @@ import { Cocktail } from '../_class/cocktails-module';
   styleUrls: ['./cocktails.component.css']
 })
 export class CocktailsComponent implements OnInit {
-
-  cocktails = COCKTAILS;
-  slecteCocktail: Cocktail;
-
-  constructor() { }
-
+  cocktails: Cocktail[];
+  selectedCocktail: Cocktail;
+  constructor(/*private cocktailsService: CocktailsService*/) { }
+  router: Router[];
   ngOnInit() {
+    //this.getCocktails();
   }
-  onSelect(cocktail: Cocktail): void {
-    this.slecteCocktail = cocktail;
-  }
+  //getCocktails(): void {
+  //  this.cocktailsService.getCocktails().subscribe(cocktails => this.cocktails = cocktails);
+  // }
 
+  onselect(cocktail: Cocktail): void {
+    this.router.navigate(['/cocktailsRecipe', this.selectedCocktail.id]);
+  }
 }

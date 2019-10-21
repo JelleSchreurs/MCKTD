@@ -9,6 +9,7 @@ import { AuthGuard } from './_helpers';
 import { StartPageComponent } from './start-page/start-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.component';
 
 
 const routes: Routes = [
@@ -18,12 +19,14 @@ const routes: Routes = [
 
     { path: 'cocktails', component: CocktailsComponent },
     { path: 'mocktails', component: MocktailsComponent },
+    { path: 'cocktails/:id', component: CocktailsRecipeComponent },
 
     { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
+
 
     exports: [RouterModule]
 })
