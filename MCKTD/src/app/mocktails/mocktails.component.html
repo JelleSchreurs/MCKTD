@@ -2,6 +2,7 @@
         <p class="mcktdMocktails">We at <span class="green">MCKTD</span> introduce you the most delicious <span class="green">Mocktails.</span></p>
         <ul>
             <li *ngFor="let mocktail of mocktails; let i =index" (click)="onSelect(mocktail)">
-                <span>{{i+1}}</span> {{mocktail.name}}
+                {{mocktail.name}}
             </li>
         </ul>
+</div>
