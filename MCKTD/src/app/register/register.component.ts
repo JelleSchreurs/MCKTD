@@ -34,7 +34,9 @@ export class RegisterComponent implements OnInit {
             lastName: ['', Validators.required],
             email: ['', Validators.required],
             username: ['', Validators.required],
-            password: ['', [Validators.required, Validators.minLength(6)]],
+            // tslint:disable-next-line: max-line-length
+            password: ['', [Validators.required,
+                            Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}')]],
             confirmPassword: ['', Validators.required]
         }, {
             validator: MustMatch('password', 'confirmPassword')

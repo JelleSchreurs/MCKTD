@@ -1,11 +1,62 @@
-p {
-    color:red;
-    text-align: center;
-    font-size: 70px;
-}
-span{
-    color: green;
-}
 *{
-    color: black;
+    color: #1c1c1d;
+    margin:0;
+    padding:0;
+}
+
+.green{
+    font-family: 'passionate relationship';
+    font-size: 164px;
+    color: #16A5A3;
+}
+
+.mcktdCocktails{
+    font-family: 'smiley regular';
+    font-size: 128px;
+    text-align: center;
+    padding: 0 2em;
+    margin-bottom: 0.5em;
+}
+
+.titleContainer{
+    margin-top: 10em;
+    margin-bottom: 6em;
+    padding: 0 8em;
+}
+
+.cocktailsContainer{
+    width:100%;
+    padding:0;
+}
+
+li{
+    list-style-type: none;
+}
+
+.cocktailList{
+    width:100%;
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.cocktailImg{
+    width:100%;
+    margin:0;
+    overflow: hidden;
+}
+
+.cocktailImg img{
+    opacity: 0.7;
+    background-color: #1c1c1d;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.cocktailImg img:hover{
+    opacity: 1;
+    transform:scale(1.03);
 }
