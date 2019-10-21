@@ -9,7 +9,6 @@ import { CocktailsComponent } from './cocktails/cocktails.component';
 import { MocktailsComponent } from './mocktails/mocktails.component';
 import { from } from 'rxjs';
 
-
 import { fakeBackendProvider } from './_helpers/fake-backend';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -17,7 +16,6 @@ import { RegisterComponent } from './register/register.component';
 import { AlertComponent } from './_components';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home/home.component';
-import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -29,9 +27,7 @@ import { SearchComponent } from './search/search.component';
     MocktailsComponent,
     RegisterComponent,
     HomeComponent,
-    AlertComponent,
-    SearchComponent,
-
+    AlertComponent
   ],
   imports: [
     BrowserModule,
