@@ -11,14 +11,14 @@ import { Cocktail } from '../_class/cocktails-module';
 export class CocktailsComponent implements OnInit {
 
   cocktails = COCKTAILS;
-  slecteCocktail: Cocktail;
+  selectedCocktail: Cocktail;
 
   constructor() { }
 
   ngOnInit() {
   }
   onSelect(cocktail: Cocktail): void {
-    this.slecteCocktail = cocktail;
+    this.selectedCocktail = cocktail;
   }
 
 }

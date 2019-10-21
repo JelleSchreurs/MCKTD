@@ -8,7 +8,6 @@ import { CocktailsComponent } from './cocktails/cocktails.component';
 import { MocktailsComponent } from './mocktails/mocktails.component';
 import { from } from 'rxjs';
 
-
 import { fakeBackendProvider } from './_helpers/fake-backend';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -26,8 +25,7 @@ import { HomeComponent } from './home/home.component';
     MocktailsComponent,
     RegisterComponent,
     HomeComponent,
-    AlertComponent,
-
+    AlertComponent
   ],
   imports: [
     BrowserModule,
