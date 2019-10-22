@@ -5,6 +5,9 @@ import { environment } from '@environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
+  add(id: number) {
+    throw new Error('Method not implemented.');
+  }
     constructor(private http: HttpClient) { }
 
     getAll() {
