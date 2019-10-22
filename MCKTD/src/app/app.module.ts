@@ -3,37 +3,44 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
 import { LoadingComponent } from './loading/loading.component';
-import { StartPageComponent } from './start-page/start-page.component';
 import { LoginComponent } from './login/login.component';
 import { CocktailsComponent } from './cocktails/cocktails.component';
 import { MocktailsComponent } from './mocktails/mocktails.component';
 import { from } from 'rxjs';
 
 import { fakeBackendProvider } from './_helpers/fake-backend';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { AlertComponent } from './_components';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home/home.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
+
+import { FileSelectDirective} from 'ng2-file-upload';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoadingComponent,
-    StartPageComponent,
     LoginComponent,
     CocktailsComponent,
     MocktailsComponent,
     RegisterComponent,
     HomeComponent,
-    AlertComponent
+    AlertComponent,
+    UserProfileComponent,
+    FileUploadComponent,
+    FileSelectDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

@@ -26,7 +26,7 @@
 
 .cocktailsContainer{
     width:100%;
-    padding:0;
+    margin:0;
 }
 
 li{
@@ -42,6 +42,7 @@ li{
 }
 
 .cocktailImg{
+    position: relative;
     width:100%;
     margin:0;
     overflow: hidden;
@@ -60,3 +61,4 @@ li{
     opacity: 1;
     transform:scale(1.03);
 }
+

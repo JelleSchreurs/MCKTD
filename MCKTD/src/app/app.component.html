@@ -3,7 +3,8 @@
         <a class="item nav-item nav-link" routerLink="/">Home</a>
         <a class="item nav-item nav-link" routerLink="/cocktails">Cocktails</a>
         <a class="item nav-item nav-link" routerLink="/mocktails">Mocktails</a>
-        <a class="item nav-item nav-link logout" (click)="logout()">Logout</a>
+        <a class="item username" routerLink="/user-profile">Hi {{currentUser.firstName}}</a>
+        <a class="item logout" (click)="logout()">Logout</a>
     </div>
 </nav>
 <!-- main content container -->
