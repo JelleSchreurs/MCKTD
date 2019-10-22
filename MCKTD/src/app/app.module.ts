@@ -15,7 +15,7 @@ import { RegisterComponent } from './register/register.component';
 import { AlertComponent } from './_components';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home/home.component';
-// import { UserProfileComponent } from './user-profile/user-profile.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 
 import { FileSelectDirective} from 'ng2-file-upload';
@@ -31,7 +31,7 @@ import { FileSelectDirective} from 'ng2-file-upload';
     RegisterComponent,
     HomeComponent,
     AlertComponent,
-//  UserProfileComponent,
+    UserProfileComponent,
     FileUploadComponent,
     FileSelectDirective
   ],
