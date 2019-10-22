@@ -19,6 +19,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 
 import { FileSelectDirective} from 'ng2-file-upload';
+import { MocktailDetailComponent } from './mocktail-detail/mocktail-detail.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { FileSelectDirective} from 'ng2-file-upload';
     AlertComponent,
     UserProfileComponent,
     FileUploadComponent,
-    FileSelectDirective
+    FileSelectDirective,
+    MocktailDetailComponent
   ],
   imports: [
     BrowserModule,

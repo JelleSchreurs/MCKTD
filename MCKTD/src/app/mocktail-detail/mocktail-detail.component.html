@@ -1,0 +1,6 @@
+<div *ngIf="mocktail">
+    <h2>{{mocktail.name | uppercase}}</h2>
+    <div><span>recipe</span></div>
+</div>
+
+<app-mocktail-detail [mocktail]="selectedMocktail"></app-mocktail-detail>
