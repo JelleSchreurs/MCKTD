@@ -5,14 +5,10 @@
 
 <div class="cocktailsContainer">
     <ul class="cocktailList">
-        <li *ngFor="let cocktail of cocktails; let i =index" (click)="onSelect(cocktail)">
+        <li *ngFor="let cocktail of cocktails" (click)="onSelect(cocktail)">
             <figure class="cocktailImg">
                 <img src="{{cocktail.imageUrl}}">
             </figure>
         </li>
     </ul>
-</div>
-
-<div *ngIf="selectedCocktail">
-    <div>{{selectedCocktail.recipe}}</div>
 </div>

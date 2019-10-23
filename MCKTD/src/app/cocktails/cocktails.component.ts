@@ -14,15 +14,16 @@ import { COCKTAILS } from './../_class/cocktails-list';
 export class CocktailsComponent implements OnInit {
 
   cocktails = COCKTAILS;
-  selectedCocktail: Cocktail;
+  // selectedCocktail: Cocktail;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    //this.getCocktails();
+
   }
-  onSelect(cocktail: Cocktail): void {
-    this.selectedCocktail = cocktail;
+  onSelect(cocktail) {
+    this.router.navigate(['/cocktails', cocktail.id])
+
   }
 
 
