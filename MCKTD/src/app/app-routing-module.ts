@@ -16,13 +16,13 @@ import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.co
 
 const routes: Routes = [
     { path: '', component: HomeComponent, canActivate: [AuthGuard] },
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
-    { path: 'user-profile', component: UserProfileComponent},
+    { path: 'login', component: LoginComponent},
+    { path: 'register', component: RegisterComponent},
+    { path: 'user-profile', component: UserProfileComponent, canActivate: [AuthGuard] },
 
-    { path: 'cocktails', component: CocktailsComponent },
-    { path: 'mocktails', component: MocktailsComponent },
-    { path: 'cocktails/:id', component: CocktailsRecipeComponent },
+    { path: 'cocktails', component: CocktailsComponent, canActivate: [AuthGuard] },
+    { path: 'mocktails', component: MocktailsComponent, canActivate: [AuthGuard] },
+    { path: 'cocktails/:id', component: CocktailsRecipeComponent, canActivate: [AuthGuard] },
 
     { path: '**', redirectTo: '' }
 ];
