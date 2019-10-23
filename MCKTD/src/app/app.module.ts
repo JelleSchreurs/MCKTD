@@ -20,7 +20,7 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 
 import { FileSelectDirective} from 'ng2-file-upload';
 import { MocktailDetailComponent } from './mocktail-detail/mocktail-detail.component';
-
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 @NgModule({
   declarations: [
