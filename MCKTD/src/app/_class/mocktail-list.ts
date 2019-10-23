@@ -1,6 +1,6 @@
 import { Mocktail } from './mocktails-module';
 
 export const MOCKTAILS: Mocktail[] = [
-    new Mocktail(1, 'mocktailOne'),
-    new Mocktail(2, 'mocktailTwo')
+    { id: 1, name: 'mocktailOne', recipe: 'this is my mocktail recipe', garnish: '', imageUrl: '' },
+    { id: 2, name: 'mocktailTwo', recipe: 'this is my mocktail recipe', garnish: '', imageUrl: '' }
 ];

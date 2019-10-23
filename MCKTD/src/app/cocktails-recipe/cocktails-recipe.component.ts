@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { COCKTAILS } from './../_class/cocktails-list';
 import { Cocktail } from './../_class/cocktails-module';
 import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
