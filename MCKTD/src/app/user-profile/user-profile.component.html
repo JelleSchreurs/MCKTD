@@ -1,9 +1,14 @@
 <section class="profileContainer">
         <h1>Hi {{currentUser.firstName}}!</h1>
         <ul>
-            <li *ngFor="let user of users">
-                {{user.username}} ({{user.firstName}} {{user.lastName}})
-                <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+            <li>
+                <label> Username: {{currentUser.username}} </label> <br>
+                <label> Firstname: {{currentUser.firstName}} </label> <br>
+                <label> Lastname: {{currentUser.lastName}}</label> <br>
+                <label> Email: {{currentUser.email}}</label> <br>
+                <br>
+                <button (click)="deleteUser(user.id)" class="text-danger">Delete</button>
             </li>
         </ul>
 </section>
+
