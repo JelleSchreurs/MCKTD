@@ -24,3 +24,6 @@
 li{
     list-style-type: none;
 }
+ p strong{
+     cursor: pointer;
+ }

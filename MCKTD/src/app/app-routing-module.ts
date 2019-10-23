@@ -11,6 +11,7 @@ import { RegisterComponent } from './register/register.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
+import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.component';
 
 
 const routes: Routes = [
@@ -21,13 +22,16 @@ const routes: Routes = [
 
     { path: 'cocktails', component: CocktailsComponent },
     { path: 'mocktails', component: MocktailsComponent },
+    { path: 'cocktails/:id', component: CocktailsRecipeComponent },
 
     { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
-
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const routingComponents = [CocktailsRecipeComponent,
+    MocktailsComponent,
+    CocktailsComponent];

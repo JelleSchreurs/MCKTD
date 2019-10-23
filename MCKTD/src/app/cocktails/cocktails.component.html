@@ -1,18 +1,14 @@
 <div class="titleContainer">
-    <p class="mcktdCocktails">We at <span class="green">MCKTD</span> introduce you the most delicious <span class="green">Cocktails.</span></p>
+    <p class="mcktdCocktails">We at <span class="green">MCKTD</span> introduce you the most delicious <span
+            class="green">Cocktails.</span></p>
 </div>
 
 <div class="cocktailsContainer">
     <ul class="cocktailList">
-        <li *ngFor="let cocktail of cocktails;" (click)="onSelect(cocktail)">
+        <li *ngFor="let cocktail of cocktails" (click)="onSelect(cocktail)">
             <figure class="cocktailImg">
                 <img src="{{cocktail.imageUrl}}"> 
             </figure>
         </li>
     </ul>
 </div>
-
-    <div *ngIf="selectedCocktail">
-        <div>{{selectedCocktail.recipe}}</div>
-    </div>
-

@@ -1,0 +1,14 @@
+button{
+    width: 25%;
+    height: auto;
+    margin-top: 15em;
+    color: #000;
+    background-color: red;
+}
+p{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    margin-top : 8em
+    
+}

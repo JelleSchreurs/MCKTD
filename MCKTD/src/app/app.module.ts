@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
-import { LoadingComponent } from './loading/loading.component';
 import { LoginComponent } from './login/login.component';
 import { CocktailsComponent } from './cocktails/cocktails.component';
 import { MocktailsComponent } from './mocktails/mocktails.component';
@@ -19,13 +18,12 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 
 import { FileSelectDirective} from 'ng2-file-upload';
-import { MocktailDetailComponent } from './mocktail-detail/mocktail-detail.component';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoadingComponent,
     LoginComponent,
     CocktailsComponent,
     MocktailsComponent,
@@ -35,7 +33,8 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
     UserProfileComponent,
     FileUploadComponent,
     FileSelectDirective,
-    MocktailDetailComponent
+    CocktailsRecipeComponent
+
   ],
   imports: [
     BrowserModule,

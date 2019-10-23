@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { COCKTAILS } from '../_class/cocktails-list';
-import { Cocktail } from '../_class/cocktails-module';
+
+import { Cocktail } from './../_class/cocktails-module';
+import { CocktailsService } from './../cocktails.service';
+import { Router } from '@angular/router';
+import { COCKTAILS } from './../_class/cocktails-list';
 
 
 @Component({
@@ -11,14 +14,17 @@ import { Cocktail } from '../_class/cocktails-module';
 export class CocktailsComponent implements OnInit {
 
   cocktails = COCKTAILS;
-  selectedCocktail: Cocktail;
+  // selectedCocktail: Cocktail;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+
   }
-  onSelect(cocktail: Cocktail): void {
-    this.selectedCocktail = cocktail;
+  onSelect(cocktail) {
+    this.router.navigate(['/cocktails', cocktail.id])
+
   }
+
 
 }
