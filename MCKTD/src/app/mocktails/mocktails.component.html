@@ -1,10 +1,14 @@
-<div class="mocktailsContainer">
+<div class="titleContainer">
     <p class="mcktdMocktails">We at <span class="green">MCKTD</span> introduce you the most delicious <span
             class="green">Mocktails.</span></p>
-    <ul>
-        <li *ngFor="let mocktail of mocktails;" (click)="onSelect(mocktail)">
-            {{mocktail.name}}
+</div>
+
+<div class="mocktailsContainer">
+    <ul class="mocktailList">
+        <li *ngFor="let mocktail of mocktails" (click)="onSelect(mocktail)">
+            <figure class="mocktailImg">
+                <img src="{{mocktail.imageUrl}}"> 
+            </figure>
         </li>
     </ul>
-
 </div>
