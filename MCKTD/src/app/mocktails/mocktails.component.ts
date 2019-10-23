@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Mocktail } from '../_class/mocktails-module';
 import { MOCKTAILS } from './../_class/mocktail-list';
-import { from } from 'rxjs';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-mocktails',
@@ -9,14 +9,17 @@ import { from } from 'rxjs';
   styleUrls: ['./mocktails.component.css']
 })
 export class MocktailsComponent implements OnInit {
-  title = 'Mocktails';
 
   mocktails = MOCKTAILS;
-  selectedMocktail: Mocktail;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
+
   }
-  onselect(mocktail: Mocktail): void {
-    this.selectedMocktail = mocktail;
+
+  onSelect(mocktail) {
+    this.router.navigate(['/mocktails', mocktail.id])
   }
+
 }
