@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Mocktail } from '../_class/mocktail';
+import { Mocktail } from '../_class/mocktails-module';
 import { MOCKTAILS } from './../_class/mocktail-list';
 import { from } from 'rxjs';
 
@@ -16,7 +16,7 @@ export class MocktailsComponent implements OnInit {
 
   ngOnInit() {
   }
-    onselect(mocktail: Mocktail): void {
-      this.selectedMocktail = mocktail;
-    }
+  onselect(mocktail: Mocktail): void {
+    this.selectedMocktail = mocktail;
   }
+}
