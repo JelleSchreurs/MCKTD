@@ -2,6 +2,16 @@
     color: #1c1c1d;
 }
 
+.myVideo {
+    position: fixed;
+    z-index: 9996;
+    right: 0;
+    bottom: 0;
+    top: 2em;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .green{
     font-family: 'passionate relationship';
     font-size: 164px;
@@ -17,7 +27,8 @@
 }
 
 .homeContainer{
-    background: url("https://www.youtube.com/watch?v=ToHuNWW-r1A");
+    position: fixed;
+    z-index: 9998;
     margin-top: 10em;
     padding: 0 8em;
 }
