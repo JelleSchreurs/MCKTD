@@ -32,7 +32,8 @@ export class RegisterComponent implements OnInit {
         this.registerForm = this.formBuilder.group({
             firstName: ['', Validators.required],
             lastName: ['', Validators.required],
-            email: ['', Validators.required],
+            email: ['', [Validators.required,
+                        Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')]],
             username: ['', Validators.required],
             // tslint:disable-next-line: max-line-length
             password: ['', [Validators.required,
