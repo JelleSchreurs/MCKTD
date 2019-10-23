@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { COCKTAILS } from './../_class/cocktails-list';
 import { Cocktail } from './../_class/cocktails-module';
 import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
@@ -14,8 +13,8 @@ import { CocktailsService } from './../cocktails.service';
 })
 export class CocktailsRecipeComponent implements OnInit {
 
-
   public cocktail: Cocktail;
+
   constructor(private route: ActivatedRoute,
     private cocktailsService: CocktailsService,
     private location: Location, ) { }
@@ -23,12 +22,9 @@ export class CocktailsRecipeComponent implements OnInit {
   ngOnInit() {
     const id = +this.route.snapshot.params['id'];
     this.cocktail = this.cocktailsService.getCocktailsbyid(id);
-    console.log(this.cocktail, id);
   }
-
 
   goBack(): void {
     this.location.back();
   }
-
 }
