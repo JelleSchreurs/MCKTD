@@ -9,14 +9,16 @@ import { UserService, AuthenticationService } from '../_services';
 })
 
 export class UserProfileComponent implements OnInit {
-    currentUser: any;
+    // currentUser: any;
     users = [];
 
+    public currentUser;
     constructor(
         private authenticationService: AuthenticationService,
         private userService: UserService
     ) {
-        this.currentUser = this.authenticationService.currentUserValue;
+        this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+        this.currentUser = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')) : '';
     }
 
     ngOnInit() {

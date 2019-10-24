@@ -15,12 +15,14 @@ import { AlertComponent } from './_components';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home/home.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { FileUploadComponent } from './file-upload/file-upload.component';
+// import { FileUploadComponent } from './file-upload/file-upload.component';
 
 import { FileSelectDirective } from 'ng2-file-upload';
 import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.component';
 import { MocktailsRecipeComponent } from './mocktails-recipe/mocktails-recipe.component';
 import { ContactComponent } from './contact/contact.component';
+import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
+
 
 @NgModule({
   declarations: [
@@ -32,11 +34,11 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     AlertComponent,
     UserProfileComponent,
-    FileUploadComponent,
+//  FileUploadComponent,
     FileSelectDirective,
     CocktailsRecipeComponent,
     MocktailsRecipeComponent,
-    ContactComponent
+    ContactComponent,
 
   ],
   imports: [
