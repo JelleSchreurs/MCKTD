@@ -20,6 +20,7 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 import { FileSelectDirective } from 'ng2-file-upload';
 import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.component';
 import { MocktailsRecipeComponent } from './mocktails-recipe/mocktails-recipe.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MocktailsRecipeComponent } from './mocktails-recipe/mocktails-recipe.co
     FileUploadComponent,
     FileSelectDirective,
     CocktailsRecipeComponent,
-    MocktailsRecipeComponent
+    MocktailsRecipeComponent,
+    ContactComponent
 
   ],
   imports: [

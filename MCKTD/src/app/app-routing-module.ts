@@ -10,6 +10,7 @@ import { RegisterComponent } from './register/register.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MocktailsRecipeComponent } from './mocktails-recipe/mocktails-recipe.component';
 import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -18,7 +19,7 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'user-profile', component: UserProfileComponent, canActivate: [AuthGuard] },
-   // { path: 'contact', component: ContactComponent, canActivate: [AuthGuard]},
+    { path: 'contact', component: ContactComponent, canActivate: [AuthGuard]},
 
     { path: 'cocktails', component: CocktailsComponent, canActivate: [AuthGuard] },
     { path: 'mocktails', component: MocktailsComponent, canActivate: [AuthGuard] },
