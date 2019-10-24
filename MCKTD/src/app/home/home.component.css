@@ -1,7 +1,16 @@
-*{
-    color: #1c1c1d;
+.homeContainer{
+    color :white;
+    font-family: 'platino', ‘sans-serif’;
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    font-variant: small-caps;
+    font-style: italic;
 }
-
+strong{
+    color: #16A5A3;
+    text-decoration: underline;
+}
 .myVideo {
     position: fixed;
     z-index: 9996;
