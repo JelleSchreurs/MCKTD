@@ -28,7 +28,7 @@ export class ContactComponent implements OnInit {
             name: ['', Validators.required],
             lastName: ['', Validators.required],
             email: ['', [Validators.required,
-                        Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')]],
+                        Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+\.[a-z]{2,3}$')]],
             subject: ['', Validators.required],
             // tslint:disable-next-line: max-line-length
             message: ['', Validators.required]

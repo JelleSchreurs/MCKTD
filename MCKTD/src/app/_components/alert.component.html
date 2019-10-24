@@ -1,1 +1,5 @@
-<div class="alert" *ngIf="message" [ngClass]="message.cssClass">{{message.text}}</div>
+
+<div class="alert errorAlert" *ngIf="message" [ngClass]="message.cssClass">
+    {{message.text}}
+    <i class="icon ion-md-close-circle-outline" (click)="clear()"></i>
+</div>

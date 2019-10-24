@@ -22,6 +22,7 @@ import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.co
 import { MocktailsRecipeComponent } from './mocktails-recipe/mocktails-recipe.component';
 import { ContactComponent } from './contact/contact.component';
 import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
