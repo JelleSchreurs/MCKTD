@@ -5,6 +5,9 @@ import { environment } from '@environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
+  contact(value: any) {
+    throw new Error('Method not implemented.');
+  }
   add(id: number) {
     throw new Error('Method not implemented.');
   }

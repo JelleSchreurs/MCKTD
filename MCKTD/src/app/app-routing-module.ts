@@ -12,11 +12,13 @@ import { MocktailsRecipeComponent } from './mocktails-recipe/mocktails-recipe.co
 import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.component';
 
 
+
 const routes: Routes = [
     { path: '', component: HomeComponent, canActivate: [AuthGuard] },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'user-profile', component: UserProfileComponent, canActivate: [AuthGuard] },
+   // { path: 'contact', component: ContactComponent, canActivate: [AuthGuard]},
 
     { path: 'cocktails', component: CocktailsComponent, canActivate: [AuthGuard] },
     { path: 'mocktails', component: MocktailsComponent, canActivate: [AuthGuard] },

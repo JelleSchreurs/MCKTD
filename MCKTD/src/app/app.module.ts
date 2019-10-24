@@ -18,10 +18,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 
 import { FileSelectDirective } from 'ng2-file-upload';
-// import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.component';
 import { MocktailsRecipeComponent } from './mocktails-recipe/mocktails-recipe.component';
-import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -36,8 +34,7 @@ import { ContactComponent } from './contact/contact.component';
     FileUploadComponent,
     FileSelectDirective,
     CocktailsRecipeComponent,
-    MocktailsRecipeComponent,
-    ContactComponent
+    MocktailsRecipeComponent
 
   ],
   imports: [
