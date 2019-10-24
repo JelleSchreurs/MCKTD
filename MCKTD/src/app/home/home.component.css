@@ -19,6 +19,7 @@ strong{
     top: 2em;
     min-width: 100%;
     min-height: 100%;
+    filter: grayscale(75%);
 }
 
 .green{
@@ -36,6 +37,10 @@ strong{
 }
 
 .homeContainer{
+    background-color: #1c1c1d90;
+    min-width: 100%;
+    min-height: 91%;
+    bottom: 0;
     position: fixed;
     z-index: 9998;
     margin-top: 10em;
