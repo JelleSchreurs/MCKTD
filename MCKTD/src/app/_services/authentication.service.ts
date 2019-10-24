@@ -9,6 +9,7 @@ import { environment } from '@environments/environment';
 export class AuthenticationService {
     private currentUserSubject: BehaviorSubject<any>;
     public currentUser: Observable<any>;
+  contact: any;
 
     constructor(private http: HttpClient) {
         this.currentUserSubject = new BehaviorSubject<any>(JSON.parse(localStorage.getItem('currentUser')));

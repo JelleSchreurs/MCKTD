@@ -12,16 +12,18 @@ import { MocktailsRecipeComponent } from './mocktails-recipe/mocktails-recipe.co
 import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.component';
 
 
+
 const routes: Routes = [
     { path: '', component: HomeComponent, canActivate: [AuthGuard] },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
-    { path: 'user-profile', component: UserProfileComponent },
+    { path: 'user-profile', component: UserProfileComponent, canActivate: [AuthGuard] },
+   // { path: 'contact', component: ContactComponent, canActivate: [AuthGuard]},
 
-    { path: 'cocktails', component: CocktailsComponent },
-    { path: 'mocktails', component: MocktailsComponent },
-    { path: 'cocktails/:id', component: CocktailsRecipeComponent },
-    { path: 'mocktails/:id', component: MocktailsRecipeComponent },
+    { path: 'cocktails', component: CocktailsComponent, canActivate: [AuthGuard] },
+    { path: 'mocktails', component: MocktailsComponent, canActivate: [AuthGuard] },
+    { path: 'cocktails/:id', component: CocktailsRecipeComponent, canActivate: [AuthGuard] },
+    { path: 'mocktails/:id', component: MocktailsRecipeComponent, canActivate: [AuthGuard] },
 
     { path: '**', redirectTo: '' }
 ];

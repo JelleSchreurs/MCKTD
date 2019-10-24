@@ -6,10 +6,6 @@
     align-items: center;
 }
 
-.logout{
-    margin-left: auto;
-}
-
 .logout:hover{
     background-color: #da2864;
     transition: 2s;
@@ -17,7 +13,8 @@
 }
 
 .username{
-    margin-left: 69.1%;
+    margin-left: auto;
+    justify-content: space-around;
     background-color: #fff;
     color: #16a5a3;
 }
