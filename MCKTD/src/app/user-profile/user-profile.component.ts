@@ -22,6 +22,7 @@ export class UserProfileComponent implements OnInit {
     }
 
     ngOnInit() {
+        console.log(this.currentUser);
       //  this.loadAllUsers();
     }
 
