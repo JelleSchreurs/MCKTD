@@ -16,7 +16,6 @@ import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home/home.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
-import { FileSelectDirective } from 'ng2-file-upload';
 import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.component';
 import { MocktailsRecipeComponent } from './mocktails-recipe/mocktails-recipe.component';
 import { ContactComponent } from './contact/contact.component';
@@ -24,12 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ApiService } from './shared/api.service';
 import { TokenInterceptor } from './_helpers/interceptor';
 
-import { AddUserComponent } from './user-profile/add-user/add-user.component';
-import { EditUserComponent } from './user-profile/edit-user/edit-user.component';
-import { ListUserComponent } from './user-profile/list-user/list-user.component';
 import { CocktailFormComponent } from './cocktail-form/cocktail-form.component';
 import { MocktailFormComponent } from './mocktail-form/mocktail-form.component';
-
 
 
 @NgModule({
@@ -42,15 +37,11 @@ import { MocktailFormComponent } from './mocktail-form/mocktail-form.component';
     HomeComponent,
     AlertComponent,
     UserProfileComponent,
-    FileSelectDirective,
     CocktailsRecipeComponent,
     MocktailsRecipeComponent,
     ContactComponent,
-    AddUserComponent,
-    EditUserComponent,
-    ListUserComponent,
     CocktailFormComponent,
-    MocktailFormComponent
+    MocktailFormComponent,
 
   ],
   imports: [
