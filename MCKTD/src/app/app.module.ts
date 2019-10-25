@@ -22,6 +22,12 @@ import { MocktailsRecipeComponent } from './mocktails-recipe/mocktails-recipe.co
 import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ApiService } from './shared/api.service';
+import { TokenInterceptor } from './_helpers/interceptor';
+
+import { AddUserComponent } from './user-profile/add-user/add-user.component';
+import { EditUserComponent } from './user-profile/edit-user/edit-user.component';
+import { ListUserComponent } from './user-profile/list-user/list-user.component';
+
 
 
 @NgModule({
@@ -38,6 +44,9 @@ import { ApiService } from './shared/api.service';
     CocktailsRecipeComponent,
     MocktailsRecipeComponent,
     ContactComponent,
+    AddUserComponent,
+    EditUserComponent,
+    ListUserComponent
 
   ],
   imports: [
@@ -49,6 +58,8 @@ import { ApiService } from './shared/api.service';
     BrowserAnimationsModule
   ],
   providers: [
+
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true},
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Router } from '@angular/router';
 import { COCKTAILS } from './../_class/cocktails-list';
+import { Cocktail } from '../_class/cocktails-module';
 
 
 @Component({
@@ -20,8 +21,7 @@ export class CocktailsComponent implements OnInit {
   }
 
   onSelect(cocktail) {
-    this.router.navigate(['/cocktails', cocktail.id])
-
+    this.router.navigate(['/cocktails', cocktail.id]);
   }
 
 }

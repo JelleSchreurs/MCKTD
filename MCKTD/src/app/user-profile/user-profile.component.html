@@ -1,5 +1,14 @@
+<nav class="profileContainer">
+    <ul>
+        <li><a routerLink='edit-user'>Edit</a></li>
+        <li><a routerLink='change-user'>Change</a></li>
+        <li><a routerLink='add-user'>Add</a></li>
+    </ul>
+</nav>
+
 <section class="profileContainer">
         <h1>Hi {{currentUser.firstName}}!</h1>
+        <br>
         <ul>
             <li>
                 <label> Username: {{currentUser.username}} </label> <br>
