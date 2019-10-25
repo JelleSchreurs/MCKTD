@@ -25,7 +25,7 @@ import { TokenInterceptor } from './_helpers/interceptor';
 
 import { CocktailFormComponent } from './cocktail-form/cocktail-form.component';
 import { MocktailFormComponent } from './mocktail-form/mocktail-form.component';
-
+import { ImageUploaderComponent } from './image-uploader/image-uploader.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +42,7 @@ import { MocktailFormComponent } from './mocktail-form/mocktail-form.component';
     ContactComponent,
     CocktailFormComponent,
     MocktailFormComponent,
-
+    ImageUploaderComponent
   ],
   imports: [
     BrowserModule,
