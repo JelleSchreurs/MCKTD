@@ -27,6 +27,8 @@ import { TokenInterceptor } from './_helpers/interceptor';
 import { AddUserComponent } from './user-profile/add-user/add-user.component';
 import { EditUserComponent } from './user-profile/edit-user/edit-user.component';
 import { ListUserComponent } from './user-profile/list-user/list-user.component';
+import { CocktailFormComponent } from './cocktail-form/cocktail-form.component';
+import { MocktailFormComponent } from './mocktail-form/mocktail-form.component';
 
 
 
@@ -46,7 +48,9 @@ import { ListUserComponent } from './user-profile/list-user/list-user.component'
     ContactComponent,
     AddUserComponent,
     EditUserComponent,
-    ListUserComponent
+    ListUserComponent,
+    CocktailFormComponent,
+    MocktailFormComponent
 
   ],
   imports: [
