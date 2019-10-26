@@ -21,7 +21,9 @@ export class ContactComponent implements OnInit {
       private authenticationService: AuthenticationService,
       private userService: UserService,
       private alertService: AlertService
-  ) {  }
+  ) {
+
+  }
 
     ngOnInit() {
         this.contactForm = this.formBuilder.group({

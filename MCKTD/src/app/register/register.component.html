@@ -1,4 +1,4 @@
-<section class="contactContainer">
+<section class="registerContainer">
     <div class="container">
         <div class="form-group logo">
             <img src="./assets/Images/MCKTD-Logo-White-1000px.png" alt="MCKTD Logo">
@@ -57,12 +57,24 @@
             <div class="form-group">
                 <label for="confirmPassword"></label>
                 <i class="icon ion-md-unlock"></i>
-                <input placeholder="repeat password" type="password" formControlName="confirmPassword" autocomplete="new-confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" maxlength="15" />
+                <input placeholder="repeat password" type="password" formControlName="confirmPassword" autocomplete="new-confirmPassword" class="form-control" 
+                [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" maxlength="15" />
             </div>
                 <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
                     <div class="feedback" *ngIf="f.confirmPassword.errors.required">* Confirm Password is required</div>
                     <div class="feedback" *ngIf="f.confirmPassword.errors.mustMatch">* Passwords must match</div>
                 </div>
+            
+            <div class="chckBox">
+                <input class="checker" type="checkbox" formControlName="termsConditions" autocomplete="new-termsConditions" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.termsConditions.errors }">
+                <label class="check" for="termsConditions">
+                I agree to <a href="">Terms and Conditions</a>
+                </label>
+            </div>
+
+            <div *ngIf="submitted && f.termsConditions.errors" class="invalid-feedback">
+                <div class="feedback" *ngIf="f.termsConditions.errors.required">* Please agree with our Terms & Conditions</div>
+            </div>
 
             <div class="btnGroup">
                 <button [disabled]="loading" class="btn btn-primary">

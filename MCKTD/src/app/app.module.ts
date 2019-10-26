@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { CdkTree } from '@angular/cdk/tree';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
@@ -6,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { CocktailsComponent } from './cocktails/cocktails.component';
 import { MocktailsComponent } from './mocktails/mocktails.component';
 import { from } from 'rxjs';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { fakeBackendProvider } from './_helpers/fake-backend';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
@@ -26,7 +29,7 @@ import { TokenInterceptor } from './_helpers/interceptor';
 import { CocktailFormComponent } from './cocktail-form/cocktail-form.component';
 import { MocktailFormComponent } from './mocktail-form/mocktail-form.component';
 import { ImageUploaderComponent } from './image-uploader/image-uploader.component';
-
+import { UpdateProfileComponent } from './user-profile/update-profile/update-profile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +45,10 @@ import { ImageUploaderComponent } from './image-uploader/image-uploader.componen
     ContactComponent,
     CocktailFormComponent,
     MocktailFormComponent,
-    ImageUploaderComponent
+    ImageUploaderComponent,
+    UpdateProfileComponent,
+    CdkTree
+
   ],
   imports: [
     BrowserModule,
@@ -50,7 +56,9 @@ import { ImageUploaderComponent } from './image-uploader/image-uploader.componen
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+
   ],
   providers: [
 

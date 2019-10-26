@@ -58,9 +58,14 @@ h2{
     justify-content: space-evenly;
 }
 
+.btnPassword{
+    text-decoration: underline 1px #DA2864;
+}
+
 .btn,
 .btnRegister{
     margin-top: 0.5em;
+    padding: 0.25em;
     width: 100%;
     font-size: 11px;
     border-radius:25px;
@@ -70,7 +75,8 @@ h2{
     text-align:center;
 }
 
-.btnRegister{
+.btnRegister
+{
     margin-top: 2em;
     background: none;
     border: none; 

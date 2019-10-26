@@ -38,7 +38,8 @@ export class RegisterComponent implements OnInit {
             // tslint:disable-next-line: max-line-length
             password: ['', [Validators.required,
                             Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+\.[a-z]{2,3}$')]],
-            confirmPassword: ['', Validators.required]
+            confirmPassword: ['', Validators.required],
+            termsConditions: ['', Validators.required]
         }, {
             validator: MustMatch('password', 'confirmPassword')
         });

@@ -11,6 +11,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MocktailsRecipeComponent } from './mocktails-recipe/mocktails-recipe.component';
 import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.component';
 import { ContactComponent } from './contact/contact.component';
+import { UpdateProfileComponent } from './user-profile/update-profile/update-profile.component';
 
 
 
@@ -18,7 +19,8 @@ const routes: Routes = [
     { path: '', component: HomeComponent, canActivate: [AuthGuard] },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
-    { path: 'user-profile', component: UserProfileComponent, canActivate: [AuthGuard] },
+    { path: 'user-profile', component: UserProfileComponent,
+            children: [ {path: 'update-profile', component: UpdateProfileComponent}], canActivate: [AuthGuard] },
     { path: 'contact', component: ContactComponent, canActivate: [AuthGuard]},
 
     { path: 'cocktails', component: CocktailsComponent, canActivate: [AuthGuard] },
