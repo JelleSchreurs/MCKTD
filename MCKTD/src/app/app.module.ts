@@ -28,11 +28,12 @@ import { TokenInterceptor } from './_helpers/interceptor';
 
 import { CocktailFormComponent } from './cocktail-form/cocktail-form.component';
 import { MocktailFormComponent } from './mocktail-form/mocktail-form.component';
-import { ImageUploaderComponent } from './image-uploader/image-uploader.component';
 // import { UpdateProfileComponent } from './user-profile/update-profile/update-profile.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { FileUploaderComponent } from './_components/file-uploader/file-uploader.component';
+import { FileListComponent } from './_components/file-list/file-list.component';
 
 @NgModule({
   declarations: [
@@ -49,10 +50,11 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     ContactComponent,
     CocktailFormComponent,
     MocktailFormComponent,
-    ImageUploaderComponent,
 //  UpdateProfileComponent,
     CdkTree,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    FileUploaderComponent,
+    FileListComponent
 
   ],
   imports: [

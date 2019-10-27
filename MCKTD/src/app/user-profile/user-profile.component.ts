@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { first } from 'rxjs/operators';
 import { UserService, AuthenticationService } from '../_services';
+import { Observable } from 'rxjs/internal/Observable';
 
 @Component({
   selector: 'app-user-profile',
@@ -15,7 +16,7 @@ export class UserProfileComponent implements OnInit {
     public currentUser;
     constructor(
         private authenticationService: AuthenticationService,
-        private userService: UserService
+        private userService: UserService,
     ) {
         this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
         this.currentUser = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')) : '';
