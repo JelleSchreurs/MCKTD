@@ -22,6 +22,10 @@ export class UserService {
         return this.http.post(`${environment.apiUrl}/users/register`, user);
     }
 
+    password(user: User){
+      return this.http.post(`${environment.apiUrl}/users/password`, user);
+    }
+
     delete(id) {
         return this.http.delete(`${environment.apiUrl}/users/${id}`);
     }

@@ -29,7 +29,11 @@ import { TokenInterceptor } from './_helpers/interceptor';
 import { CocktailFormComponent } from './cocktail-form/cocktail-form.component';
 import { MocktailFormComponent } from './mocktail-form/mocktail-form.component';
 import { ImageUploaderComponent } from './image-uploader/image-uploader.component';
-import { UpdateProfileComponent } from './user-profile/update-profile/update-profile.component';
+// import { UpdateProfileComponent } from './user-profile/update-profile/update-profile.component';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,8 +50,9 @@ import { UpdateProfileComponent } from './user-profile/update-profile/update-pro
     CocktailFormComponent,
     MocktailFormComponent,
     ImageUploaderComponent,
-    UpdateProfileComponent,
-    CdkTree
+//  UpdateProfileComponent,
+    CdkTree,
+    ForgotPasswordComponent
 
   ],
   imports: [
@@ -58,6 +63,8 @@ import { UpdateProfileComponent } from './user-profile/update-profile/update-pro
     FormsModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    NgbModule,
+    FormsModule
 
   ],
   providers: [

@@ -1,6 +1,5 @@
 import { Cocktail } from './cocktails-module';
 
-
 export const COCKTAILS: Cocktail[] = [
     // tslint:disable-next-line: max-line-length
     { id: 1, name: 'Bangkok Denpasar', recipe: 'this is my reciept', garnish: '/', imageUrl: '../../assets/Images/BangkokDenpasar.jpg' },

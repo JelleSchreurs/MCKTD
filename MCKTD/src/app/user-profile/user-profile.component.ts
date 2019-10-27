@@ -10,7 +10,7 @@ import { UserService, AuthenticationService } from '../_services';
 
 export class UserProfileComponent implements OnInit {
     // currentUser: any;
-    users = [];
+   users = [];
 
     public currentUser;
     constructor(
@@ -37,4 +37,5 @@ export class UserProfileComponent implements OnInit {
             .pipe(first())
             .subscribe(users => this.users = users);
     }
+
 }

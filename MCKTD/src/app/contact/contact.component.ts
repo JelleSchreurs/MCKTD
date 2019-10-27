@@ -49,6 +49,9 @@ export class ContactComponent implements OnInit {
         // stop here if form is invalid
         if (this.contactForm.invalid) {
             return;
+        } else {
+            this.contactForm.reset();
+            this.router.navigate(['/contact']);
         }
 
         this.loading = true;
