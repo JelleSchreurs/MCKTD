@@ -3,12 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Mocktail } from './../_class/mocktails-module';
-import { MocktailsService } from './../mocktails.service';
+import { MocktailsService } from '../_services/mocktails.service';
 
 @Component({
   selector: 'app-mocktails-recipe',
   templateUrl: './mocktails-recipe.component.html',
-  styleUrls: ['./mocktails-recipe.component.css']
+  styleUrls: ['./mocktails-recipe.component.scss']
 })
 export class MocktailsRecipeComponent implements OnInit {
   public mocktail: Mocktail;

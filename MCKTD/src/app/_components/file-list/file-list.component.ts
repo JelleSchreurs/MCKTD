@@ -5,7 +5,7 @@ import { FileService } from '../../_services/file.service';
 @Component({
  selector: 'app-file-list',
  templateUrl: './file-list.component.html',
- styleUrls: ['./file-list.component.css']
+ styleUrls: ['./file-list.component.scss']
 })
 export class FileListComponent {
 

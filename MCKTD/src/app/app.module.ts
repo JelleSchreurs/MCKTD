@@ -26,10 +26,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ApiService } from './shared/api.service';
 import { TokenInterceptor } from './_helpers/interceptor';
 
-import { CocktailFormComponent } from './cocktail-form/cocktail-form.component';
-import { MocktailFormComponent } from './mocktail-form/mocktail-form.component';
-// import { UpdateProfileComponent } from './user-profile/update-profile/update-profile.component';
-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { FileUploaderComponent } from './_components/file-uploader/file-uploader.component';
@@ -49,9 +45,6 @@ import { TermsAndCondtionsComponent } from './_components/terms-and-condtions/te
     CocktailsRecipeComponent,
     MocktailsRecipeComponent,
     ContactComponent,
-    CocktailFormComponent,
-    MocktailFormComponent,
-//  UpdateProfileComponent,
     CdkTree,
     ForgotPasswordComponent,
     FileUploaderComponent,

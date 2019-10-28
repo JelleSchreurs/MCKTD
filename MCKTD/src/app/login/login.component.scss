@@ -1,5 +1,18 @@
+// Colors
+$logoColor_1: #DA2864;
+$LogoColor_2: #ec6091;
+$LogoColor_3: #f2a7be;
+$LogoColor_4: #9ae1e2;
+$LogoColor_5: #16a5a3;
+$Background_Color: #1c1c1d;
+$Background_ColorOp65: #1c1c1d65;
+$Background_ColorOp90: #1c1c1d90;
+
+$FontPassionate: 'passionate relationship';
+$FontSmiley: 'smiley';
+
 .loginContainer{
-    background-image: url(/assets/Images/white-cocktail.jpg);
+    background-image: url(../../assets/Images/white-cocktail.jpg);
     background-position: center;
     background-size: cover;
     padding: 0;
@@ -13,7 +26,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #1c1c1d90;
+    background: $Background_ColorOp90;
 }
 
 form{
@@ -24,7 +37,7 @@ form{
 
 h2{
     text-align: center;
-    font-family: 'passionate relationship';
+    font-family: $FontPassionate;
     font-size: 62px;
     font-weight: 300;
     margin-bottom: 1em;
