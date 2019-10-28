@@ -34,6 +34,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { FileUploaderComponent } from './_components/file-uploader/file-uploader.component';
 import { FileListComponent } from './_components/file-list/file-list.component';
+import { TermsAndCondtionsComponent } from './_components/terms-and-condtions/terms-and-condtions.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { FileListComponent } from './_components/file-list/file-list.component';
     CdkTree,
     ForgotPasswordComponent,
     FileUploaderComponent,
-    FileListComponent
+    FileListComponent,
+    TermsAndCondtionsComponent
 
   ],
   imports: [
