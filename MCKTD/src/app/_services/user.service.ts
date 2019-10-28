@@ -22,7 +22,7 @@ export class UserService {
         return this.http.post(`${environment.apiUrl}/users/register`, user);
     }
 
-    password(user: User){
+    password(user: User) {
       return this.http.post(`${environment.apiUrl}/users/password`, user);
     }
 

@@ -33,8 +33,8 @@ export class ForgotPasswordComponent implements OnInit {
 
   ngOnInit() {
     this.forgotPassword = this.formBuilder.group({
-      email: ['', Validators.required,
-      Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+\.[a-z]{2,3}$')]
+      email: ['', [Validators.required,
+        Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+\.[a-z]{2,3}$')]]
     });
   }
 
@@ -43,22 +43,13 @@ export class ForgotPasswordComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
     this.alertService.clear();
+
     if (this.forgotPassword.invalid) {
       return;
     }
 
     this.loading = true;
-    this.userService.password(this.forgotPassword.value)
-      .pipe(first())
-      .subscribe(
-        data => {
-          this.alertService.success('Email is send succesful to your email', true);
-          this.router.navigate(['/login'], { queryParams: { registered: true}});
-        },
-        error => {
-          this.alertService.error(error);
-          this.loading = false;
+    this.alertService.success('Email is send succesful to your email', true);
+    this.router.navigate(['/login']);
         }
-      );
-  }
 }

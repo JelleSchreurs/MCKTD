@@ -55,16 +55,7 @@ export class ContactComponent implements OnInit {
         }
 
         this.loading = true;
-        this.userService.register(this.contactForm.value)
-            .pipe(first())
-            .subscribe(
-                data => {
-                    this.alertService.success('Message send succesful', true);
-                    this.router.navigate(['/'], { queryParams: { registered: true }});
-                },
-                error => {
-                    this.alertService.error(error);
-                    this.loading = false;
-                });
+        this.alertService.success('Message send succesful', true);
+        this.router.navigate(['/']);
     }
 }

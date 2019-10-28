@@ -1,8 +1,11 @@
-<h1>Your files</h1>
+<h1>Your Cocktails & Mocktails
+</h1>
 <ul>
  <li *ngFor="let fileName of fileList$ | async" >
    {{fileName}}&nbsp;&nbsp;
-   <span (click)="download(fileName)">download</span>&nbsp;
+   <figure class="cocktailImg">
+    <img src="../../../assets/Images/{{fileName}}"> 
+  </figure>
    <span (click)="remove(fileName)">remove</span>
  </li>
 </ul>
