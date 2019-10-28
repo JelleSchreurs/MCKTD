@@ -8,11 +8,15 @@ $Background_Color: #1c1c1d;
 $Background_ColorOp65: #1c1c1d65;
 $Background_ColorOp90: #1c1c1d90;
 
+// Fonts
 $FontPassionate: 'passionate relationship';
 $FontSmiley: 'smiley';
 
+//Images
+$Background_Image: '../../assets/Images/white-cocktail.jpg';
+
 .loginContainer{
-    background-image: url(../../assets/Images/white-cocktail.jpg);
+    background-image: url($Background_Image);
     background-position: center;
     background-size: cover;
     padding: 0;
@@ -47,8 +51,8 @@ h2{
     display:flex;
     flex-direction: row;
     border-radius:25px;
-    border: solid #16a5a3 2px;
-    background-color: #1c1c1d65;
+    border: solid $LogoColor_5 2px;
+    background-color: $Background_ColorOp65;
     margin-top: 0.5em;
 }
 
@@ -78,8 +82,8 @@ h2{
     width: 100%;
     font-size: 11px;
     border-radius:25px;
-    border: solid #16a5a3 2px;
-    background-color: #16a5a3;
+    border: solid $LogoColor_5 2px;
+    background-color: $LogoColor_5;
     text-transform: uppercase;
     text-align:center;
 }
@@ -93,7 +97,7 @@ h2{
 }
 
 .icon {
-    background: #16a5a3;
+    background: $LogoColor_5;
     border-radius: 25px 0px 0px 25px;
     width: 50px;
     text-align: center;
