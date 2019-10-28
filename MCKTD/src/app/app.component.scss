@@ -1,13 +1,25 @@
-.container{
-    height: 100vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+// Colors
+$logoColor_1: #DA2864;
+$LogoColor_2: #ec6091;
+$LogoColor_3: #f2a7be;
+$LogoColor_4: #9ae1e2;
+$LogoColor_5: #16a5a3;
+$Background_Color: #1c1c1d;
+$Background_ColorOp65: #1c1c1d65;
+$Background_ColorOp90: #1c1c1d90;
+$TextColor: #fff;
+$TextColor_Dark: #000;
+
+// Fonts
+$FontPassionate: 'passionate relationship';
+$FontSmiley: 'smiley';
+$FontDefault: 'Lato', 'Arial', sans-serif;
+
+//Images
+$Background_Image: '../../assets/Images/white-cocktail.jpg';
 
 .logout:hover{
-    background-color: #da2864;
+    background-color: $logoColor_1;
     transition: 2s;
     cursor: pointer;
 }
@@ -15,33 +27,32 @@
 .username{
     margin-left: auto;
     justify-content: space-around;
-    background-color: #fff;
-    color: #16a5a3;
+    background-color: $TextColor;
+    color: $LogoColor_5;
 }
 
 .username:hover{
-    background-color: #9AE1E2;
-    color: #fff;
+    background-color: $LogoColor_4;
+    color: $TextColor;
     transition: 1s;
 }
 
-.navbar {
+.navbar{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    height: 9%;
-    width: 100%;
     position: fixed;
-    margin:0;
-    padding: 0;
+    z-index: 9999;
     top:0;
     left:0;
-    z-index: 9997;
-    font-family: 'passionate relationship';
-    font-size: 36px;
+    height: 9%;
+    width: 100%;
+    background: $LogoColor_5;
+    font-family: $FontPassionate;
+    font-size: 180%;
     font-weight: 300;
-    background: #16a5a3;
     overflow: hidden;
+    filter: grayscale(75%);
 }
 
 .item{
@@ -58,11 +69,43 @@
 
 .nav-item:hover,
 .nav-item:active{
-    background: #9AE1E2;
+    background: $LogoColor_4;
     transition: 2s;
 }
 
-.nav-link:link,
-.nav-link:visited{
-    text-decoration: underline #16a5a3;
+.nav-item:link,
+.nav-item:visited{
+    text-decoration: underline $LogoColor_5;
+}
+
+// Media_Queries
+/* Big tablet to 1200px (widths smalle than 1140px */
+@media only screen and (max-width: 1200px){
+    .navbar{
+        width: 100%;
+        height: 9%;
+    }
+
+    .item{
+        padding: 1em;
+    }
+}
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px){
+    .navbar{
+        width: 100%;
+        height: 9%;
+    }
+
+    .item{
+        padding: 1em;
+    }
+}
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px){
+
+}
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px){
+
 }

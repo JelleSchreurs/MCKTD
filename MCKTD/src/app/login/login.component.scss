@@ -15,12 +15,17 @@ $FontSmiley: 'smiley';
 //Images
 $Background_Image: '../../assets/Images/white-cocktail.jpg';
 
+*{
+    box-sizing: border-box;
+}
+
 .loginContainer{
     background-image: url($Background_Image);
     background-position: center;
     background-size: cover;
     padding: 0;
     margin: 0;
+
 }
 
 .container{
@@ -127,4 +132,24 @@ img{
     background-color: rgba(255,255,255,0);
     border:none;
     text-transform: lowercase;
+}
+
+
+// Media_Queries
+
+/* Big tablet to 1200px (widths smalle than 1140px */
+@media only screen and (max-width: 1200px){
+    
+}
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px){
+
+}
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px){
+
+}
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px){
+
 }

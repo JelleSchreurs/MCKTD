@@ -1,5 +1,25 @@
+// Colors
+$logoColor_1: #DA2864;
+$LogoColor_2: #ec6091;
+$LogoColor_3: #f2a7be;
+$LogoColor_4: #9ae1e2;
+$LogoColor_5: #16a5a3;
+$Background_Color: #1c1c1d;
+$Background_ColorOp65: #1c1c1d65;
+$Background_ColorOp90: #1c1c1d90;
+$TextColor: #fff;
+$TextColor_Dark: #000;
+
+// Fonts
+$FontPassionate: 'passionate relationship';
+$FontSmiley: 'smiley';
+$FontDefault: 'Lato', 'Arial', sans-serif;
+
+//Images
+$Background_Image: '../../assets/Images/white-cocktail.jpg';
+
 *{
-    color: #000;
+    color: $TextColor_Dark;
 }
 
 .profileContainer{
