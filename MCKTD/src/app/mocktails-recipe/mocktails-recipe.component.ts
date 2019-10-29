@@ -14,13 +14,13 @@ export class MocktailsRecipeComponent implements OnInit {
   public mocktail: Mocktail;
 
   constructor(private route: ActivatedRoute,
-              private mocktailsService: MocktailsService,
-              private location: Location) { }
+    private mocktailsService: MocktailsService,
+    private location: Location) { }
 
   ngOnInit() {
     const id = +this.route.snapshot.params.id;
     this.mocktail = this.mocktailsService.getMocktailsbyid(id);
-    console.log(this.mocktail, id);
+
   }
 
   goBack(): void {
