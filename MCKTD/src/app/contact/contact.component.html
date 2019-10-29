@@ -1,11 +1,11 @@
-<section class="registerContainer">
-        <div class="container">
+        <section class="container">
             <div class="form-group logo">
                 <img src="./assets/Images/MCKTD-Logo-1000px.png" alt="MCKTD Logo">
             </div>
-    
+            
+            <div class="formStyle">
             <h2>Contact Us</h2> 
-                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" autocomplete="off">
+                <form class="formClass" [formGroup]="contactForm" (ngSubmit)="onSubmit()" autocomplete="off">
     
                 <div class="form-group">
                     <label for="name"></label>
@@ -63,5 +63,6 @@
             </form>
         </div>
     </section>
+
     
     

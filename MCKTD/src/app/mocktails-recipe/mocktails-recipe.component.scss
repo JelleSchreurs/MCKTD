@@ -1,96 +1,119 @@
+// Colors
+$logoColor_1: #DA2864;
+$LogoColor_2: #ec6091;
+$LogoColor_3: #f2a7be;
+$LogoColor_4: #9ae1e2;
+$LogoColor_5: #16a5a3;
+$Background_Color: #1c1c1d;
+$Background_ColorOp65: #1c1c1d65;
+$Background_ColorOp90: #1c1c1d90;
+$TextColor: #fff;
+$TextColor_Dark: #000;
 
-div p{
-    color: black;
-    font-size: 50px;
+// Fonts
+$FontPassionate: 'passionate relationship';
+$FontSmiley: 'smiley';
+$FontDefault: 'Lato', 'Arial', sans-serif;
 
-    text-align:center
-    
-}
-div{
-    margin-top:8em;
+//Images
+$Background_Image: '../../assets/Images/white-cocktail.jpg';
+
+.recipeSection{
+  width: 60%;
+  overflow: hidden;
+  margin: 10% 20% 0 20%;
+  background: $LogoColor_5;
+  box-shadow: 5px 5px 15px $LogoColor_4;
 }
 
-button {
-  width: 130px;
-  height: 40px;
-  background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
-  border: none;
-  border-radius: 5px;
-  position: relative;
-  border-bottom: 4px solid #2b8bc6;
-  color: #fbfbfb;
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
-  font-size: 15px;
-  text-align: left;
-  text-indent: 5px;
-  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
+.buttonRecipeSection{
+  width: 60%;
+  margin: 5% 20%;
+  text-align: center;
 }
-button.back {
-    text-align: right;
-    padding-right: 12px;
-    box-sizing: border-box;
-  }
-  button.back:after {
-    content: "";
-    width: 0;
-    height: 0;
-    display: block;
-    border-top: 20px solid #187dbc;
-    border-bottom: 20px solid #187dbc;
-    border-right: 16px solid transparent;
-    border-left: 20px solid #187dbc;
-    position: absolute;
-    opacity: 0.6; 
-    left: 0;
-    top: 0;
-    border-radius: 5px 0 0 5px;    
-  }
-  button:active {
-    box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
-    top: 1px;
-  }
-  
-  button:after {
-    content: "";
-    width: 0;
-    height: 0;
-    display: block;
-    border-top: 20px solid #187dbc;
-    border-bottom: 20px solid #187dbc;
-    border-left: 16px solid transparent;
-    border-right: 20px solid #187dbc;
-    position: absolute;
-    opacity: 0.6; 
-    right: 0;
-    top: 0;
-    border-radius: 0 5px 5px 0;  
-  }
-  
-  /* Button pointing left */
-  
-  button.back {
-    text-align: right;
-    padding-right: 12px;
-    box-sizing: border-box;
-  }
-  button.back:after {
-    content: "";
-    width: 0;
-    height: 0;
-    display: block;
-    border-top: 20px solid #187dbc;
-    border-bottom: 20px solid #187dbc;
-    border-right: 16px solid transparent;
-    border-left: 20px solid #187dbc;
-    position: absolute;
-    opacity: 0.6; 
-    left: 0;
-    top: 0;
-    border-radius: 5px 0 0 5px; 
+
+.recipe{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
 }
+
+.details{
+  width: 100%;
+  display: flex;
+  padding-left: 2%;
+  padding-top: 4%;
+  flex-direction: column;
+  color: $Background_Color;
+  font-family: $FontDefault;
+  background: $LogoColor_5;
+  filter: grayscale(75%);
+}
+
+h3{
+  font-family: $FontPassionate;
+  font-size: 175%;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-top: 0.75em;
+}
+
+hr{
+  margin-right: 5%;
+  margin-bottom: 0.5em;
+}
+.mocktailName{
+  font-family: $FontPassionate;
+  font-size: 400%;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+.mocktailRecipe,
+.mocktailGarnish{
+  width: 75%;
+  font-size: 80%;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.figureBox{
+  z-index: 9996;
+  overflow: hidden;
+  width: 60%;
+}
+
+.imageFigure{
+  width: 100%;
+  height: auto;
+  transform: scale(1.05);
+}
+
+
+// btn 
+.btn{
+  color: $TextColor;
+  background-color: $LogoColor_5;
+  font-size: 150%;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-family: $FontPassionate;
+  padding: 10px 60px;
+  border-radius: 100px;
+  filter: grayscale(75%);
+}
+
+.btn:link,
+.btn:visited{
+  font-weight: 300;
+  text-decoration: none;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: $LogoColor_4;
+  border: 1px solid $LogoColor_4;
+  color: $TextColor_Dark;
+}
+

@@ -1,9 +1,29 @@
+// Colors
+$logoColor_1: #DA2864;
+$LogoColor_2: #ec6091;
+$LogoColor_3: #f2a7be;
+$LogoColor_4: #9ae1e2;
+$LogoColor_5: #16a5a3;
+$Background_Color: #1c1c1d;
+$Background_ColorOp65: #1c1c1d65;
+$Background_ColorOp90: #1c1c1d90;
+$Background_ColorGrey: rgba(255,255,255,0);
+$Background_ColorGreyOp65: rgba(255,255,255,0.65);
+$TextColorOp95: #ffffff95;
+$LogoColor_1Op80: #DA286480;
+
+// Fonts
+$FontPassionate: 'passionate relationship';
+$FontSmiley: 'smiley';
+
+//Images
+$Background_Image: '../../assets/Images/white-cocktail.jpg';
+// Css
 *{
     color: #000000;
 }
 
 .contactContainer{
-    background-image: url(/assets/Images/white-cocktail.jpg);
     background-position: center;
     background-size: cover;
     padding: 0;
@@ -14,7 +34,7 @@
     height: 100vh;
     margin:0;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -27,9 +47,10 @@ form{
 
 h2{
     text-align: center;
-    font-family: 'passionate relationship';
-    font-size: 62px;
+    font-family: $FontPassionate;
     font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 300%;
     margin-bottom: 1em;
 }
 
@@ -37,21 +58,21 @@ h2{
     display:flex;
     flex-direction: row;
     border-radius:25px;
-    background-color: #1c1c1d65;
-    border: solid #16a5a3 2px;
+    background-color: $Background_ColorOp65;
+    border: solid $LogoColor_5 2px;
     margin-top: 0.5em;
 }
 
 .form-control{
     border: none;
-    background-color: rgba(255,255,255,0);
+    background-color: $Background_ColorGrey;
     margin: 0.25em;
     text-align: center;
     justify-content: space-evenly;
 }
 
 ::placeholder{
-    color: rgba(255,255,255,0.65);
+    color:$Background_ColorGreyOp65;
 }
 
 .btnGroup{
@@ -67,8 +88,8 @@ h2{
     width: 100%;
     font-size: 11px;
     border-radius:25px;
-    border: solid #16a5a3 2px;
-    background-color: #16a5a3;
+    border: solid $LogoColor_5 2px;
+    background-color: $LogoColor_5;
     text-transform: uppercase;
     text-align:center;
 }
@@ -81,7 +102,7 @@ h2{
 }
 
 .icon {
-    background: #16a5a3;
+    background: $LogoColor_5;
     border-radius: 10px 0px 0px 10px;
     width: 50px;
     text-align: center;
@@ -92,14 +113,14 @@ h2{
     border-radius: 25px;
     margin-top: 0.4em;
     padding: 0.3em;
-    background: #DA286480;
-    color: #ffffff95;
-    font-size: 12px;
+    background: $logoColor_1;
+    color: $TextColorOp95;
+    font-size: 50%;
     text-align: center;
 }
 
 img{
-    width: 300px;
+    width: 500px;
     height: auto;
 }
 
@@ -108,7 +129,7 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,0);
+    background-color: $Background_ColorGrey;
     border:none;
     text-transform: lowercase;
 }

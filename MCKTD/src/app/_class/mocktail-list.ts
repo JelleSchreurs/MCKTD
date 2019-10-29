@@ -4,9 +4,10 @@ export const MOCKTAILS: Mocktail[] = [
     // tslint:disable-next-line: max-line-length
     { id: 1, name: '4th of July Firecracker Mocktail', recipe: '1️ Fill a tall glass with ice️⃣ Add in non-alcoholic pina colada mix.Slowly pour a mix of cherry up and grenadine (better red color and great tasting with the pina colada mix!) Slowly add your blue option. I used blue kool-aide.Top with whipped cream and sprinkles.', garnish: '', imageUrl: '../../assets/Images/Mocktails/4thOfJulyFirecrackerMocktail.jpg' },
     // tslint:disable-next-line: max-line-length
-    { id: 2, name: 'Muddled Lemon', recipe: '¼ of a Lime ¼ of a Lemon ¼ oz / 10ml - Pepperberry Syrup Handful of Mint Top with Soda Muddle the mint, Lime, Lemon and Syrup together in a shaker. Add ice and shake.', garnish: '', imageUrl: '../../assets/Images/Mocktails/MuddledLemon.jpg' },
+    { id: 2, name: 'Muddled Lemon', recipe: '¼ of a Lime ¼ of a Lemon ¼ oz / 10ml - Pepperberry Syrup Handful of Mint Top with Soda Muddle the mint, Lime, Lemon and Syrup together in a shaker. Add ice and shake.', garnish: 'Lavender', imageUrl: '../../assets/Images/Mocktails/MuddledLemon.jpg' },
     { id: 3, name: 'BitterBloodOrange', recipe: '', garnish: '', imageUrl: '../../assets/Images/Mocktails/BitterBloodOrange.jpg'},
-    { id: 4, name: 'Bombay Butterfly', recipe: '', garnish: '', imageUrl: '../../assets/Images/Mocktails/BombayButterfly.jpg'},
+    // tslint:disable-next-line: max-line-length
+    { id: 4, name: 'Bombay Butterfly', recipe: 'This is the recipe', garnish: 'lavander', imageUrl: '../../assets/Images/Mocktails/BombayButterfly.jpg'},
     { id: 5, name: 'Bombay Wok Winslow', recipe: '', garnish: '', imageUrl: '../../assets/Images/Mocktails/BombayWokWinslow.jpg'},
     { id: 6, name: 'BoraBoraBrew', recipe: '', garnish: '', imageUrl: '../../assets/Images/Mocktails/BoraBoraBrew.jpg'},
     { id: 7, name: 'Cool Cumcumber Soda', recipe: '', garnish: '', imageUrl: '../../assets/Images/Mocktails/CoolCumcumberSoda.jpg'},
