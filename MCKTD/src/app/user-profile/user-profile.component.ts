@@ -11,7 +11,7 @@ import { Observable } from 'rxjs/internal/Observable';
 
 export class UserProfileComponent implements OnInit {
     // currentUser: any;
-   users = [];
+    users = [];
 
     public currentUser;
     constructor(
