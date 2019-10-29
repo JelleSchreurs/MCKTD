@@ -36,8 +36,8 @@ export class RegisterComponent implements OnInit {
                         Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+\.[a-z]{2,3}$')]],
             username: ['', Validators.required],
             // tslint:disable-next-line: max-line-length
-            password: ['', [Validators.required,
-                            Validators.pattern('^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}')]],
+            password: ['', [Validators.minLength(8), Validators.required,
+                Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]+$')]],
             confirmPassword: ['', Validators.required],
             termsConditions: ['', Validators.required]
         }, {
