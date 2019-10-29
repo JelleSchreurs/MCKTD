@@ -5,7 +5,7 @@ import { UserService, AuthenticationService } from '../_services';
 @Component({
     selector: 'app-home-page',
     templateUrl: 'home.component.html',
-    styleUrls: ['./home.component.css']
+    styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
     currentUser: any;

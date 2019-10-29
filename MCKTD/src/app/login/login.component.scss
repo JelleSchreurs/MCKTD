@@ -1,0 +1,130 @@
+// Colors
+$logoColor_1: #DA2864;
+$LogoColor_2: #ec6091;
+$LogoColor_3: #f2a7be;
+$LogoColor_4: #9ae1e2;
+$LogoColor_5: #16a5a3;
+$Background_Color: #1c1c1d;
+$Background_ColorOp65: #1c1c1d65;
+$Background_ColorOp90: #1c1c1d90;
+
+// Fonts
+$FontPassionate: 'passionate relationship';
+$FontSmiley: 'smiley';
+
+//Images
+$Background_Image: '../../assets/Images/white-cocktail.jpg';
+
+.loginContainer{
+    background-image: url($Background_Image);
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $Background_ColorOp90;
+}
+
+form{
+    padding:0 10em;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+    font-family: $FontPassionate;
+    font-size: 62px;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.form-group{
+    display:flex;
+    flex-direction: row;
+    border-radius:25px;
+    border: solid $LogoColor_5 2px;
+    background-color: $Background_ColorOp65;
+    margin-top: 0.5em;
+}
+
+.form-control{
+    border: none;
+    background-color: rgba(255,255,255,0);
+    margin: 0.25em;
+    text-align: center;
+    justify-content: space-around;
+}
+
+::placeholder{
+    color: rgba(255,255,255,0.65);
+}
+
+.btnGroup{
+    margin: 0.25em;
+    display:column;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.btn,
+.btnRegister{
+    margin-top: 0.5em;
+    padding: 0.25em;
+    width: 100%;
+    font-size: 11px;
+    border-radius:25px;
+    border: solid $LogoColor_5 2px;
+    background-color: $LogoColor_5;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+.btnRegister
+{
+    margin-top: 2em;
+    background: none;
+    border: none; 
+    text-decoration: none;
+}
+
+.icon {
+    background: $LogoColor_5;
+    border-radius: 25px 0px 0px 25px;
+    width: 50px;
+    text-align: center;
+    padding-top: 0.2em;
+}
+
+.feedback{
+    border-radius: 25px;
+    margin-top: 0.4em;
+    padding: 0.3em;
+    background: #DA286480;
+    color: #ffffff95;
+    font-size: 12px;
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0);
+    border:none;
+    text-transform: lowercase;
+}

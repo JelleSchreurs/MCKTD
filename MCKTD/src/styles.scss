@@ -1,0 +1,38 @@
+// Colors
+$logoColor_1: #DA2864;
+$LogoColor_2: #ec6091;
+$LogoColor_3: #f2a7be;
+$LogoColor_4: #9ae1e2;
+$LogoColor_5: #16a5a3;
+$Background_Color: #1c1c1d;
+$Background_ColorOp65: #1c1c1d65;
+$Background_ColorOp90: #1c1c1d90;
+
+// Fonts
+$FontPassionate: 'passionate relationship';
+$FontSmiley: 'smiley';
+
+//Images
+$Background_Image: '../../assets/Images/white-cocktail.jpg';
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html{
+    max-width: 1140px;
+    margin: 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+.bodyContainer{
+    width: 100vw;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

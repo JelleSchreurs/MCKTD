@@ -25,10 +25,12 @@
             ],
             "styles": [
               "src/custom-theme.scss",
-              "src/styles.css",
-              "src/assets/Fonts/customfont.css"
+              "src/styles.scss",
+              "src/assets/Fonts/customfont.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -91,7 +93,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.sass"
             ],
             "scripts": []
           }
@@ -127,7 +129,7 @@
   "defaultProject": "MCKTD",
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "css"
+      "styleext": "scss"
     }
   }
 }

@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-mocktails',
   templateUrl: './mocktails.component.html',
-  styleUrls: ['./mocktails.component.css']
+  styleUrls: ['./mocktails.component.scss']
 })
 export class MocktailsComponent implements OnInit {
 
@@ -19,7 +19,7 @@ export class MocktailsComponent implements OnInit {
   }
 
   onSelect(mocktail) {
-    this.router.navigate(['/mocktails', mocktail.id])
+    this.router.navigate(['/mocktails', mocktail.id]);
   }
 
 }

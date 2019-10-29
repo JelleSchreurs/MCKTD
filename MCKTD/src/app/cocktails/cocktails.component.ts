@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 import { Router } from '@angular/router';
 import { COCKTAILS } from './../_class/cocktails-list';
+import { Cocktail } from '../_class/cocktails-module';
 
 
 @Component({
   selector: 'app-cocktails',
   templateUrl: './cocktails.component.html',
-  styleUrls: ['./cocktails.component.css']
+  styleUrls: ['./cocktails.component.scss']
 })
 export class CocktailsComponent implements OnInit {
 
@@ -20,8 +21,7 @@ export class CocktailsComponent implements OnInit {
   }
 
   onSelect(cocktail) {
-    this.router.navigate(['/cocktails', cocktail.id])
-
+    this.router.navigate(['/cocktails', cocktail.id]);
   }
 
 }

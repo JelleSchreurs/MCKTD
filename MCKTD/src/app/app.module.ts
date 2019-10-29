@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { CdkTree } from '@angular/cdk/tree';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
@@ -6,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { CocktailsComponent } from './cocktails/cocktails.component';
 import { MocktailsComponent } from './mocktails/mocktails.component';
 import { from } from 'rxjs';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { fakeBackendProvider } from './_helpers/fake-backend';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
@@ -15,15 +18,19 @@ import { AlertComponent } from './_components';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home/home.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-// import { FileUploadComponent } from './file-upload/file-upload.component';
 
-import { FileSelectDirective } from 'ng2-file-upload';
 import { CocktailsRecipeComponent } from './cocktails-recipe/cocktails-recipe.component';
 import { MocktailsRecipeComponent } from './mocktails-recipe/mocktails-recipe.component';
 import { ContactComponent } from './contact/contact.component';
-import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ApiService } from './shared/api.service';
+import { TokenInterceptor } from './_helpers/interceptor';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { FileUploaderComponent } from './_components/file-uploader/file-uploader.component';
+import { FileListComponent } from './_components/file-list/file-list.component';
+import { TermsAndCondtionsComponent } from './_components/terms-and-condtions/terms-and-condtions.component';
 
 @NgModule({
   declarations: [
@@ -35,11 +42,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     AlertComponent,
     UserProfileComponent,
-//  FileUploadComponent,
-    FileSelectDirective,
     CocktailsRecipeComponent,
     MocktailsRecipeComponent,
     ContactComponent,
+    CdkTree,
+    ForgotPasswordComponent,
+    FileUploaderComponent,
+    FileListComponent,
+    TermsAndCondtionsComponent
 
   ],
   imports: [
@@ -48,13 +58,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+    NgbModule,
+    FormsModule
+
   ],
   providers: [
+
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true},
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
-    fakeBackendProvider
+    fakeBackendProvider,
+    ApiService
   ],
   bootstrap: [AppComponent]
 })

@@ -31,6 +31,28 @@ export class AuthenticationService {
             }));
     }
 
+    passwordEmail(email) {
+        return this.http.post<any>(`${environment.apiUrl}/users/authentiate`, { email })
+            .pipe(map(user => {
+                if (user && user.token) {
+                    localStorage.setItem('currentUser', JSON.stringify(user));
+                    this.currentUserSubject.next(user);
+                }
+                return user;
+            }));
+    }
+
+    update(username, firstname, lastname, email) {
+        return this.http.post<any>(`${environment.apiUrl}/users/authenticate`, { username, firstname, lastname, email })
+        .pipe(map(user => {
+            if (user && user.token) {
+            localStorage.setItem('currentUser', JSON.stringify(user));
+            this.currentUserSubject.next(user);
+            }
+            return user;
+        }));
+    }
+
     logout() {
         // remove user from local storage and set current user to null
         localStorage.removeItem('currentUser');

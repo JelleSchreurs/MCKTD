@@ -8,7 +8,7 @@ import { UserService, AuthenticationService, AlertService } from '../_services';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
@@ -21,7 +21,9 @@ export class ContactComponent implements OnInit {
       private authenticationService: AuthenticationService,
       private userService: UserService,
       private alertService: AlertService
-  ) {  }
+  ) {
+
+  }
 
     ngOnInit() {
         this.contactForm = this.formBuilder.group({
@@ -47,19 +49,13 @@ export class ContactComponent implements OnInit {
         // stop here if form is invalid
         if (this.contactForm.invalid) {
             return;
+        } else {
+            this.contactForm.reset();
+            this.router.navigate(['/contact']);
         }
 
         this.loading = true;
-        this.userService.register(this.contactForm.value)
-            .pipe(first())
-            .subscribe(
-                data => {
-                    this.alertService.success('Message send succesful', true);
-                    this.router.navigate(['/'], { queryParams: { registered: true }});
-                },
-                error => {
-                    this.alertService.error(error);
-                    this.loading = false;
-                });
+        this.alertService.success('Message send succesful', true);
+        this.router.navigate(['/']);
     }
 }

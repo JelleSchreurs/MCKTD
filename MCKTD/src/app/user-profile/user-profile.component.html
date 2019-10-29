@@ -1,14 +1,30 @@
+<nav class="profileContainer">
+    <ul>
+        <li><a routerLink="/edit-user">Edit</a></li>
+        <li><a routerLink="/change-user">Change</a></li>
+        <li><a routerLink="/add-user">Add</a></li>
+    </ul>
+</nav>
+
 <section class="profileContainer">
     <h1>Hi {{currentUser.firstName}}!</h1>
-    <img [src]="imageUrl" style="width:250;height:200px;"><br>
-    <input type="file" accept="image/*" (change)="handleFileInput($event)">
+    <br>
     <ul>
         <li>
-            <label> Username: {{currentUser.username}} </label> <br>
+            <label> Username: {{currentUser.userName}} </label> <br>
             <label> Firstname: {{currentUser.firstName}} </label> <br>
             <label> Lastname: {{currentUser.lastName}}</label> <br>
+            <label> Email: {{currentUser.email}}</label><br>
             <br>
             <button (click)="deleteUser(user.id)" class="text-danger">Delete</button>
         </li>
     </ul>
+
+    <!-- <app-update-profile></app-update-profile> -->
+    <br>
+    <app-file-list></app-file-list>
+    <br>
+    <app-file-uploader></app-file-uploader>
+    <img src="https://raw.githubusercontent.com/maciejtreder/angular-and-nodejs-data/step2/src/assets/loader.gif"
+        *ngIf="displayLoader | async" />
 </section>
