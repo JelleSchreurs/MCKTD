@@ -18,6 +18,7 @@ $FontDefault: 'Lato', 'Arial', sans-serif;
 //Images
 $Background_Image: '../../assets/Images/white-cocktail.jpg';
 
+//css
 .logout:hover{
     background-color: $logoColor_1;
     transition: 2s;
@@ -48,9 +49,10 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
     height: 9%;
     width: 100%;
     background: $LogoColor_5;
+    font-weight: 300;
+    letter-spacing: 2px;
     font-family: $FontPassionate;
     font-size: 180%;
-    font-weight: 300;
     overflow: hidden;
     filter: grayscale(75%);
 }
