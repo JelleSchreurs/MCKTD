@@ -1,13 +1,14 @@
 <section class="profileContainer">
-        <h1>Hi {{currentUser.firstName}}!</h1>
-        <ul>
-            <li>
-                <label> Username: {{currentUser.username}} </label> <br>
-                <label> Firstname: {{currentUser.firstName}} </label> <br>
-                <label> Lastname: {{currentUser.lastName}}</label> <br>
-                <br>
-                <button (click)="deleteUser(user.id)" class="text-danger">Delete</button>
-            </li>
-        </ul>
+    <h1>Hi {{currentUser.firstName}}!</h1>
+    <img [src]="imageUrl" style="width:250;height:200px;"><br>
+    <input type="file" accept="image/*" (change)="handleFileInput($event)">
+    <ul>
+        <li>
+            <label> Username: {{currentUser.username}} </label> <br>
+            <label> Firstname: {{currentUser.firstName}} </label> <br>
+            <label> Lastname: {{currentUser.lastName}}</label> <br>
+            <br>
+            <button (click)="deleteUser(user.id)" class="text-danger">Delete</button>
+        </li>
+    </ul>
 </section>
-

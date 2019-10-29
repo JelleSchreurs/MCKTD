@@ -3,15 +3,15 @@ import { first } from 'rxjs/operators';
 import { UserService, AuthenticationService } from '../_services';
 
 @Component({
-  selector: 'app-user-profile',
-  templateUrl: './user-profile.component.html',
-  styleUrls: ['./user-profile.component.css']
+    selector: 'app-user-profile',
+    templateUrl: './user-profile.component.html',
+    styleUrls: ['./user-profile.component.css']
 })
 
 export class UserProfileComponent implements OnInit {
     // currentUser: any;
     users = [];
-
+    imageUrl: string = "../assets/Images/UserImage.png";
     public currentUser;
     constructor(
         private authenticationService: AuthenticationService,
@@ -22,7 +22,14 @@ export class UserProfileComponent implements OnInit {
     }
 
     ngOnInit() {
-      //  this.loadAllUsers();
+        var reader = new FileReader();
+        reader.onload = (filedata) => {
+
+
+
+        };
+        //
+        //reader.readAsDataURL()
     }
 
     deleteUser(id: number) {
