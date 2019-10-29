@@ -1,5 +1,8 @@
-<div>
-    <p><span>{{mocktail.id}}</span>{{mocktail.name}}</p>
+<div class="recipe">
+    <figure>
+        <img src={{mocktail.imageUrl}}>
+    </figure>
+    <p>{{mocktail.name}}</p>
     <p>{{mocktail.recipe}}</p>
 </div>
 <button class="button" (click)="goBack()">go back</button>

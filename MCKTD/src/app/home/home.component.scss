@@ -59,7 +59,7 @@ h1 {
 // btn 
 .btn{
     filter: grayscale(75%);
-    color: $LogoColor_5;
+    color: $TextColor;
     font-size: 180%;
     font-weight: 300;
     letter-spacing: 3px;
@@ -80,7 +80,6 @@ h1 {
 .btn-full:visited {
     background-color: $LogoColor_5;
     border: 1px solid $LogoColor_5;
-    color: $TextColor;
     margin-right: 15px;
 }
 
@@ -93,11 +92,13 @@ h1 {
 .btn:hover,
 .btn:active {
     background-color: $LogoColor_4;
+
 }
 
 .btn-full:hover,
 .btn-full:active {
     border: 1px solid $LogoColor_4;
+    color: $TextColor_Dark;
 }
 
 .btn-ghost:hover,
