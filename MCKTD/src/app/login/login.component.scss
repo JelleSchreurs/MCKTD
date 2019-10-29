@@ -7,6 +7,10 @@ $LogoColor_5: #16a5a3;
 $Background_Color: #1c1c1d;
 $Background_ColorOp65: #1c1c1d65;
 $Background_ColorOp90: #1c1c1d90;
+$Background_ColorGrey: rgba(255,255,255,0);
+$Background_ColorGreyOp65: rgba(255,255,255,0.65);
+$TextColorOp95: #ffffff95;
+$LogoColor_1Op80: #DA286480;
 
 // Fonts
 $FontPassionate: 'passionate relationship';
@@ -21,8 +25,9 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
 
 .loginContainer{
     background-image: url($Background_Image);
-    background-position: center;
     background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
     padding: 0;
     margin: 0;
 
@@ -39,7 +44,6 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
 }
 
 form{
-    padding:0 10em;
     justify-content: center;
     align-items: center;
 }
@@ -47,9 +51,10 @@ form{
 h2{
     text-align: center;
     font-family: $FontPassionate;
-    font-size: 62px;
+    font-size: 300%;
     font-weight: 300;
-    margin-bottom: 1em;
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
 }
 
 .form-group{
@@ -63,14 +68,14 @@ h2{
 
 .form-control{
     border: none;
-    background-color: rgba(255,255,255,0);
+    background-color: $Background_ColorGrey;
     margin: 0.25em;
     text-align: center;
     justify-content: space-around;
 }
 
 ::placeholder{
-    color: rgba(255,255,255,0.65);
+    color: $Background_ColorGreyOp65;
 }
 
 .btnGroup{
@@ -85,7 +90,7 @@ h2{
     margin-top: 0.5em;
     padding: 0.25em;
     width: 100%;
-    font-size: 11px;
+    font-size: 55%;
     border-radius:25px;
     border: solid $LogoColor_5 2px;
     background-color: $LogoColor_5;
@@ -113,9 +118,9 @@ h2{
     border-radius: 25px;
     margin-top: 0.4em;
     padding: 0.3em;
-    background: #DA286480;
-    color: #ffffff95;
-    font-size: 12px;
+    background: $LogoColor_1Op80;
+    color: $TextColorOp95;
+    font-size: 50%;
     text-align: center;
 }
 
@@ -129,7 +134,7 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,0);
+    background-color: $Background_ColorGrey;
     border:none;
     text-transform: lowercase;
 }
