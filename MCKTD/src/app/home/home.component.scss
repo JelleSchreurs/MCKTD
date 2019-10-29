@@ -1,16 +1,39 @@
-.homeContainer{
-    color :white;
-    font-family: 'platino', ‘sans-serif’;
-    font-size: 50px;
-    font-weight: normal;
-    text-align: center;
-    font-variant: small-caps;
-    font-style: italic;
+// Colors
+$logoColor_1: #DA2864;
+$LogoColor_2: #ec6091;
+$LogoColor_3: #f2a7be;
+$LogoColor_4: #9ae1e2;
+$LogoColor_5: #16a5a3;
+$Background_Color: #1c1c1d;
+$Background_ColorOp65: #1c1c1d65;
+$Background_ColorOp90: #1c1c1d90;
+$TextColor: #fff;
+$TextColor_Dark: #000;
+
+// Fonts
+$FontPassionate: 'passionate relationship';
+$FontSmiley: 'smiley';
+$FontDefault: 'Lato', 'Arial', sans-serif;
+
+//Images
+$Background_Image: '../../assets/Images/white-cocktail.jpg';
+
+// css
+*{
+    box-sizing: border-box;
 }
-strong{
-    color: #16A5A3;
-    text-decoration: underline;
+
+h1 {
+    margin-top: 4.5em;
+    margin-bottom: 1em;
+    color: $TextColor;
+    font-size: 400%;
+    font-weight: 300;
+    word-spacing: 8px;
+    letter-spacing: 3px;
+    font-family: $FontPassionate;
 }
+
 .myVideo {
     position: fixed;
     z-index: 9996;
@@ -22,34 +45,108 @@ strong{
     filter: grayscale(75%);
 }
 
-.green{
-    font-family: 'passionate relationship';
-    font-size: 164px;
-    color: #16A5A3;
-}
-
-.mcktdCocktails{
-    font-family: 'smiley regular';
-    font-size: 128px;
-    text-align: center;
-    padding: 0 2em;
-    margin-bottom: 0.5em;
-}
-
 .homeContainer{
-    background-color: #1c1c1d90;
+    background-color: $Background_ColorOp90;
     min-width: 100%;
-    min-height: 91%;
+    min-height: 100%;
     bottom: 0;
     position: fixed;
     z-index: 9998;
-    margin-top: 10em;
-    padding: 0 8em;
+    padding: 0 7em;
+    text-align: center;
 }
 
-li{
-    list-style-type: none;
+// btn 
+.btn{
+    filter: grayscale(75%);
+    color: $LogoColor_5;
+    font-size: 180%;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-family: $FontPassionate;
 }
- p strong{
-     cursor: pointer;
- }
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 80px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: $LogoColor_5;
+    border: 1px solid $LogoColor_5;
+    color: $TextColor;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid $LogoColor_5;
+    color: $LogoColor_5;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: $LogoColor_4;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid $LogoColor_4;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid $LogoColor_4;
+    color: $TextColor_Dark;
+}
+
+// Media_Queries
+/* Big tablet to 1200px (widths smalle than 1140px */
+@media only screen and (max-width: 1200px){
+    .btn-full:link,
+    .btn-full:visited {
+        margin-right: 10px;
+    }
+}
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px){
+    .btn-full:link,
+    .btn-full:visited {
+        margin-right: 7px;
+        margin: 0.2em;
+    }
+}
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px){
+    .homeContainer{
+        padding: 0 4px;
+    }
+
+    .btn-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn{
+        margin: 0.1em;
+        margin-bottom: 0.5em;
+    }
+
+    h1 {
+        margin-top: 5em;
+        font-size: 250%;
+        padding: 0.5em;
+    }
+}
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px){
+
+}

@@ -18,15 +18,20 @@ $FontDefault: 'Lato', 'Arial', sans-serif;
 //Images
 $Background_Image: '../../assets/Images/white-cocktail.jpg';
 
-*{
-    color: $TextColor_Dark;
+.alert{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color:$Background_ColorOp65;
+    color: $TextColor;
+    padding: 0.6em;
+    font-family: $FontPassionate;
+    font-size: 200%;
+    text-align: center;
 }
 
-.profileContainer{
-    margin-top: 10em;
-    padding: 0 8em;
-}
-
-ul{
-    list-style-type: none;
+.icon{
+    margin-left: 1em;
+    font-size: 90%;
+    color: $TextColor;
 }

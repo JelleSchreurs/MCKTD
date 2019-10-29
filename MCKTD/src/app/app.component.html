@@ -1,13 +1,17 @@
-<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+<nav class="navbar sticky navbar-dark bg-dark" *ngIf="currentUser">
+
     <div class="navbar-nav">
-        <a class="item nav-item nav-link" routerLink="/">Home</a>
-        <a class="item nav-item nav-link" routerLink="/cocktails">Cocktails</a>
-        <a class="item nav-item nav-link" routerLink="/mocktails">Mocktails</a>
-        <a class="item nav-item nav-link" routerLink="/contact">Contact</a>
+        <a class="item nav-item" routerLink="/">Home</a>
+        <a class="item nav-item" routerLink="/cocktails">Cocktails</a>
+        <a class="item nav-item" routerLink="/mocktails">Mocktails</a>
+        <a class="item nav-item" routerLink="/contact">Contact</a>
         <a class="item username" routerLink="/user-profile">Hi {{currentUser.firstName}}</a>
         <a class="item logout" (click)="logout()">Logout</a>
+      <!-- <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a> -->
     </div>
+
 </nav>
+
 <!-- main content container -->
 <div class="login">
     <div class="bodyContainer">
