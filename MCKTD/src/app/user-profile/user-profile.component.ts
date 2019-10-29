@@ -11,8 +11,8 @@ import { Observable } from 'rxjs/internal/Observable';
 
 export class UserProfileComponent implements OnInit {
     // currentUser: any;
-   users = [];
-
+    users = [];
+    imageUrl = '../assets/Images/UserImage.png';
     public currentUser;
     constructor(
         private authenticationService: AuthenticationService,
@@ -25,6 +25,11 @@ export class UserProfileComponent implements OnInit {
     ngOnInit() {
         console.log(this.currentUser);
       //  this.loadAllUsers();
+        let reader = new FileReader();
+        reader.onload = (filedata) => {
+        };
+
+        // reader.readAsDataURL()
     }
 
     deleteUser(id: number) {
