@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { first } from 'rxjs/operators';
 import { UserService, AuthenticationService } from '../_services';
-import { Observable } from 'rxjs/internal/Observable';
+
 
 @Component({
   selector: 'app-user-profile',
@@ -12,7 +12,6 @@ import { Observable } from 'rxjs/internal/Observable';
 export class UserProfileComponent implements OnInit {
     // currentUser: any;
     users = [];
-
     public currentUser;
     constructor(
         private authenticationService: AuthenticationService,

@@ -45,7 +45,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
                 username: user.userName,
                 firstName: user.firstName,
                 lastName: user.lastName,
-                email : user.email,
+                email: user.email,
                 token: 'fake-jwt-token'
             });
         }
@@ -54,7 +54,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
             const user = body;
 
             if (users.find(x => x.username === user.username)) {
-                return error('Username "' + user.username + '" is already taken');
+                return error('Username "' + user.userName + '" is already taken');
             }
 
             user.id = users.length ? Math.max(...users.map(x => x.id)) + 1 : 1;
