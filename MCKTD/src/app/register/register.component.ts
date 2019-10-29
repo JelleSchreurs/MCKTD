@@ -6,8 +6,8 @@ import { first } from 'rxjs/operators';
 import { UserService, AuthenticationService, AlertService } from '../_services';
 
 @Component({
-  templateUrl: 'register.component.html',
-  styleUrls: ['register.component.scss']
+    templateUrl: 'register.component.html',
+    styleUrls: ['register.component.scss']
 })
 
 export class RegisterComponent implements OnInit {
@@ -33,11 +33,11 @@ export class RegisterComponent implements OnInit {
             firstName: ['', Validators.required],
             lastName: ['', Validators.required],
             email: ['', [Validators.required,
-                        Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+\.[a-z]{2,3}$')]],
+            Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')]],
             username: ['', Validators.required],
             // tslint:disable-next-line: max-line-length
-            password: ['', [Validators.required,
-                            Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+\.[a-z]{2,3}$')]],
+            password: ['', [Validators.minLength(8), Validators.required,
+            Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]+$')]],
             confirmPassword: ['', Validators.required],
             termsConditions: ['', Validators.required]
         }, {
@@ -65,7 +65,7 @@ export class RegisterComponent implements OnInit {
             .subscribe(
                 data => {
                     this.alertService.success('Registration successful', true);
-                    this.router.navigate(['/login'], { queryParams: { registered: true }});
+                    this.router.navigate(['/login'], { queryParams: { registered: true } });
                 },
                 error => {
                     this.alertService.error(error);
