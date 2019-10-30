@@ -1,6 +1,6 @@
 <nav class="navbar sticky navbar-dark bg-dark" *ngIf="currentUser">
-    <div class="navbar-nav js--main-nav">
-        <a class="item nav-item" routerLink="''">Home</a>
+    <div class="navbar-nav">
+        <a class="item nav-item" routerLink="/">Home</a>
         <a class="item nav-item" routerLink="/cocktails">Cocktails</a>
         <a class="item nav-item" routerLink="/mocktails">Mocktails</a>
         <a class="item nav-item" routerLink="/contact">Contact</a>
@@ -8,11 +8,16 @@
         <a class="item logout" (click)="logout()">Logout</a>
     </div>
 
-   <div class="mobileNavbar">
-        <img src="../assets/Images/MCKTD-Logo-1000px-WhiteOutline.png" alt="Mcktd logo" class="mcktdLogo">
-        <a class="mobile-nav js--nav-icon"><i class="icon ion-md-menu" (click)="toggleCollapse()"></i></a>
+    <div class="mobileNavbar">
+        <a routerLink="/"><i class="icon ion-ios-home"></i></a>
+        <a routerLink="/cocktails"><i class="icon ion-ios-wine"></i></a>
+        <a routerLink="/mocktails"><i class="icon ion-ios-pint"></i></a>
+        <a routerLink="/contact"><i class="icon ion-ios-add-circle-outline"></i></a>
+        <a routerLink="/user-profile"><i class="icon ion-ios-person"></i></a>
+        <a (click)="logout()"><i class="icon ion-ios-close-circle"></i></a>
     </div>
 </nav>
+
 
 <div class="login">
     <div class="bodyContainer">
