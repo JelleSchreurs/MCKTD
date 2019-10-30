@@ -1,7 +1,6 @@
 <nav class="navbar sticky navbar-dark bg-dark" *ngIf="currentUser">
-
-    <div class="navbar-nav">
-        <a class="item nav-item" routerLink="/">Home</a>
+    <div class="navbar-nav js--main-nav">
+        <a class="item nav-item" routerLink="''">Home</a>
         <a class="item nav-item" routerLink="/cocktails">Cocktails</a>
         <a class="item nav-item" routerLink="/mocktails">Mocktails</a>
         <a class="item nav-item" routerLink="/contact">Contact</a>
@@ -9,11 +8,10 @@
         <a class="item logout" (click)="logout()">Logout</a>
     </div>
 
-    <div class="mobileNavbar">
+   <div class="mobileNavbar">
         <img src="../assets/Images/MCKTD-Logo-1000px-WhiteOutline.png" alt="Mcktd logo" class="mcktdLogo">
-        <a class="mobile-nav"><i class="icon ion-md-menu"></i></a>
+        <a class="mobile-nav js--nav-icon"><i class="icon ion-md-menu" (click)="toggleCollapse()"></i></a>
     </div>
-
 </nav>
 
 <div class="login">
