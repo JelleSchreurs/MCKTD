@@ -69,16 +69,7 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
     padding: 2% 6%;
 }
 
-.nav-item:hover,
-.nav-item:active{
-    background: $LogoColor_4;
-    transition: 2s;
-}
-
-.nav-item:link,
-.nav-item:visited{
-    text-decoration: underline $LogoColor_5;
-}
+.mobileNavbar{ display: none;}
 
 // Media_Queries
 /* Big tablet to 1200px (widths smalle than 1140px */
