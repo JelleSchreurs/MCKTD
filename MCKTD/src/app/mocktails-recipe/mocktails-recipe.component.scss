@@ -126,6 +126,11 @@ hr{
   color: $TextColor_Dark;
 }
 
+.ratingCocktail{
+  text-align: center;
+  color:rgb(8, 8, 8);
+}
+
 // Media_Queries
 /* Big tablet to 1200px (widths smalle than 1140px */
 @media only screen and (max-width: 1200px){
@@ -223,3 +228,4 @@ hr{
   }
 
 }
+

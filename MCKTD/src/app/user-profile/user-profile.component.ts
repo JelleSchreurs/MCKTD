@@ -1,17 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { first } from 'rxjs/operators';
 import { UserService, AuthenticationService } from '../_services';
 
 
 @Component({
-  selector: 'app-user-profile',
-  templateUrl: './user-profile.component.html',
-  styleUrls: ['./user-profile.component.scss']
+    selector: 'app-user-profile',
+    templateUrl: './user-profile.component.html',
+    styleUrls: ['./user-profile.component.scss']
 })
 
 export class UserProfileComponent implements OnInit {
-    // currentUser: any;
-    users = [];
+
+    @Input() users = [];
+
     public currentUser;
     constructor(
         private authenticationService: AuthenticationService,
@@ -22,8 +23,7 @@ export class UserProfileComponent implements OnInit {
     }
 
     ngOnInit() {
-        console.log(this.currentUser);
-      //  this.loadAllUsers();
+
     }
 
     deleteUser(id: number) {

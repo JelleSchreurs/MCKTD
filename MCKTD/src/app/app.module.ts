@@ -31,6 +31,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { FileUploaderComponent } from './_components/file-uploader/file-uploader.component';
 import { FileListComponent } from './_components/file-list/file-list.component';
 import { TermsAndCondtionsComponent } from './_components/terms-and-condtions/terms-and-condtions.component';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { TermsAndCondtionsComponent } from './_components/terms-and-condtions/te
     ForgotPasswordComponent,
     FileUploaderComponent,
     FileListComponent,
-    TermsAndCondtionsComponent
+    TermsAndCondtionsComponent,
+    RatingComponent
 
   ],
   imports: [
