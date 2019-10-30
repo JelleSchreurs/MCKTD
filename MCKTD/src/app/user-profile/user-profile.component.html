@@ -1,27 +1,33 @@
-<nav class="profileContainer">
-    <ul>
-        <li><a routerLink="/edit-user">Edit</a></li>
-        <li><a routerLink="/change-user">Change</a></li>
-        <li><a routerLink="/add-user">Add</a></li>
+<nav class="settingsContainer">
+    <ul class="btnBar">
+        <li><a routerLink="/change-user">Settings<i class="icon ion-md-cog"></i>
+            </a></li>
     </ul>
 </nav>
 
 <section class="profileContainer">
-    <h1>Hi {{currentUser.firstName}}!</h1>
-    <br>
-    <ul>
-        <li>
-            <label> Username: {{currentUser.userName}} </label> <br>
-            <label> Firstname: {{currentUser.firstName}} </label> <br>
-            <label> Lastname: {{currentUser.lastName}}</label> <br>
-            <label> Email: {{currentUser.email}}</label><br>
+    <div>
+
+    </div>
+    <div class="personInfo">
+        <figure class="personPic">
+            <img src="../../assets/Images/bar-bartender.jpg">
+        </figure>
+
+        <div class="data">
+            <h1>Hi {{currentUser.userName}}</h1>
+            <hr>
             <br>
-            <button (click)="deleteUser(user.id)" class="text-danger">Delete</button>
-        </li>
-    </ul>
-    <br>
+            <label><span>Username: </span>{{currentUser.userName}} </label>
+            <label><span>Firstname: </span>{{currentUser.firstName}} </label>
+            <label><span>Lastname: </span>{{currentUser.lastName}}</label>
+            <label><span>Email: </span>{{currentUser.email}}</label>
+        </div>
+    </div>
+    <!--<button (click)="deleteUser(user.id)" class="text-danger">Delete</button> -->
+    <!-- <app-update-profile></app-update-profile> -->
+
     <app-file-list></app-file-list>
-    <br>
     <app-file-uploader></app-file-uploader>
     <img src="https://raw.githubusercontent.com/maciejtreder/angular-and-nodejs-data/step2/src/assets/loader.gif"
         *ngIf="displayLoader | async" />

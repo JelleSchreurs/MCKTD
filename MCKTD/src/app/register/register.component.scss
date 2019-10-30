@@ -53,6 +53,7 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
     justify-content: center;
     align-items: center;
     background: $Background_ColorOp90;
+    ;
 }
 
 form{
@@ -102,7 +103,7 @@ h2{
     margin-top: 0.5em;
     padding: 0.25em;
     width: 100%;
-    font-size: 11px;
+    font-size: 55%;
     border-radius:25px;
     border: solid $LogoColor_5 2px;
     background-color: $LogoColor_5;
@@ -155,7 +156,19 @@ img{
 
 /* Big tablet to 1200px (widths smalle than 1140px */
 @media only screen and (max-width: 1200px){
-    
+    img{
+        width: 225px;
+        height: auto;
+    }
+
+    h2{
+        margin-bottom: 0.1em;
+    }
+
+    .feedback{
+        margin: 0.1em;
+    }
+
 }
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px){

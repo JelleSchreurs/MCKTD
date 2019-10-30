@@ -1,6 +1,137 @@
-*{
-    color: #000;
+// Colors
+$logoColor_1: #DA2864;
+$LogoColor_2: #ec6091;
+$LogoColor_3: #f2a7be;
+$LogoColor_4: #9ae1e2;
+$LogoColor_5: #16a5a3;
+$Background_Color: #1c1c1d;
+$Background_ColorOp65: #1c1c1d65;
+$Background_ColorOp90: #1c1c1d90;
+$TextColor: #fff;
+$TextColor_Dark: #000;
+
+// Fonts
+$FontPassionate: 'passionate relationship';
+$FontSmiley: 'smiley';
+$FontDefault: 'Lato', 'Arial', sans-serif;
+
+
+.files{
+    color: $Background_Color;
 }
-span:hover {
+
+h1{
+    color: $Background_Color;
+    text-align: center;
+    font-family: $FontPassionate;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 300%;
+}
+
+a:hover {
+   cursor: pointer;
+}
+
+.imageList{
+    width:100%;
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.Img li{
+    display: block;
+    list-style-type: none;
+    width:100%;
+    color: $Background_ColorOp65;
+    margin-top: 0.2em;
+}
+
+.Img{
+    position: relative;
+    width:100%;
+    margin:0;
+    overflow: hidden;
+}
+
+.Img img{
+    opacity: 0.7;
+    background-color:$Background_Color;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    filter: grayscale(75%);
+}
+
+.Img img:hover{
+    opacity: 1;
+    transform:scale(1.05);
+    filter: grayscale(0);
+}
+
+.info{
+    text-align: center;
+}
+
+P{
+    margin: 0 5%;
+    color:$TextColor_Dark;
+    font-size: 80%;
+}
+
+// btn 
+.btn{
+    color: $TextColor;
+    background-color: $LogoColor_5;
+    font-size: 80%;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-family: $FontPassionate;
+    padding: 5px 30px;
+    border-radius: 100px;
     cursor: pointer;
- }
+    filter: grayscale(75%);
+    margin: 0.5em;
+  }
+  
+  .btn:link,
+  .btn:visited{
+    font-weight: 300;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+  }
+  
+  .btn:hover,
+  .btn:active {
+    background-color: $LogoColor_4;
+    border: 1px solid $LogoColor_4;
+    color: $TextColor_Dark;
+  }
+
+  // Media_Queries
+/* Big tablet to 1200px (widths smalle than 1140px */
+@media only screen and (max-width: 1200px){
+
+}
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px){
+    .imageList{
+        grid-template-columns: repeat(5, 1fr);
+
+    }
+}
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px){
+    .imageList{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px){
+    .imageList{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,7 +1,21 @@
-<div>
-    <p>{{cocktail.name}}</p>
-    <p>{{cocktail.recipe}}</p>
-</div>
-<button class="button" (click)="goBack()">go back</button>
-<p class="ratingCocktail"><strong>Rating Cocktail</strong></p>
-<app-rating></app-rating>
+<section class="recipeSection">
+    <h2>Cocktail #{{cocktail.id}}</h2>
+    <div class="recipe">
+        <figure class="figureBox">
+            <img class="imageFigure" src={{cocktail.imageUrl}}>
+        </figure>
+        <div class="details">
+            <p class="cocktailName">{{cocktail.name}}</p>
+            <h3>Recipe</h3>
+            <hr>
+            <p class="cocktailRecipe">{{cocktail.recipe}}</p>
+            <h3>Garnish</h3>
+            <hr>
+            <p class="cocktailGarnish">{{cocktail.garnish}}</p>
+        </div>
+    </div>
+</section>
+
+<section class="buttonRecipeSection">
+    <a class="btn" (click)="goBack()">go back</a>
+</section>

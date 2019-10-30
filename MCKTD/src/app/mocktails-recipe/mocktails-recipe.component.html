@@ -1,7 +1,21 @@
-<div>
-    <p><span>{{mocktail.id}}</span>{{mocktail.name}}</p>
-    <p>{{mocktail.recipe}}</p>
-</div>
-<button class="button" (click)="goBack()">go back</button>
-<p class="ratingCocktail"><strong>Rating Mocktail</strong></p>
-<app-rating></app-rating>
+<section class="recipeSection">
+    <h2>Mocktail #{{mocktail.id}}</h2>
+    <div class="recipe">
+        <figure class="figureBox">
+            <img class="imageFigure" src={{mocktail.imageUrl}}>
+        </figure>
+        <div class="details">
+            <p class="mocktailName">{{mocktail.name}}</p>
+            <h3>Recipe</h3>
+            <hr>
+            <p class="mocktailRecipe">{{mocktail.recipe}}</p>
+            <h3>Garnish</h3>
+            <hr>
+            <p class="mocktailGarnish">{{mocktail.garnish}}</p>
+        </div>
+    </div>
+</section>
+
+<section class="buttonRecipeSection">
+    <a class="btn" (click)="goBack()">go back</a>
+</section>

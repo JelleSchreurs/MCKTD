@@ -1,22 +1,45 @@
+// Colors
+$logoColor_1: #DA2864;
+$LogoColor_2: #ec6091;
+$LogoColor_3: #f2a7be;
+$LogoColor_4: #9ae1e2;
+$LogoColor_5: #16a5a3;
+$Background_Color: #1c1c1d;
+$Background_ColorOp65: #1c1c1d65;
+$Background_ColorOp90: #1c1c1d90;
+$TextColor: #fff;
+$TextColor_Dark: #000;
+
+// Fonts
+$FontPassionate: 'passionate relationship';
+$FontSmiley: 'smiley';
+$FontDefault: 'Lato', 'Arial', sans-serif;
+
+//Images
+$Background_Image: '../../assets/Images/white-cocktail.jpg';
+
+// css
 *{
     box-sizing: border-box;
-    color: #1c1c1d;
+    color: $Background_Color;
     margin:0;
     padding:0;
 }
 
 .green{
-    font-family: 'passionate relationship';
-    font-size: 164px;
-    color: #16A5A3;
+    font-size: 350%;
+    color: $LogoColor_5;
 }
 
 .mcktdCocktails{
-    font-family: 'smiley regular';
-    font-size: 128px;
+    font-family: $FontPassionate;
+    font-size: 300%;
+    font-weight: 300;
+    letter-spacing: 5px;
     text-align: center;
     padding: 0 2em;
     margin-bottom: 0.5em;
+    filter: grayscale(75%);
 }
 
 .titleContainer{
@@ -28,7 +51,6 @@
 .cocktailsContainer{
     width:100%;
     margin:0;
-    
 }
 
 .cocktailList li{
@@ -54,15 +76,85 @@
 
 .cocktailImg img{
     opacity: 0.7;
-    background-color: #1c1c1d;
+    background-color:$Background_Color;
     width: 100%;
     height: auto;
     transform: scale(1.15);
     transition: transform 0.5s, opacity 0.5s;
+    filter: grayscale(75%);
 }
 
 .cocktailImg img:hover{
     opacity: 1;
-    transform:scale(1.03);
+    transform:scale(1.05);
+    filter: grayscale(0);
 }
 
+// Media_Queries
+
+/* Big tablet to 1200px (widths smalle than 1140px */
+@media only screen and (max-width: 1200px){
+    .titleContainer{
+        padding: 0 4em;
+    }
+
+    .cocktailImg img:hover{
+        transform:scale(1.06);
+    }
+
+}
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px){
+    .mcktdCocktails{
+        font-size: 225%;
+    }
+
+    .green{
+        font-size: 275%;
+    }
+    .cocktailList{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .cocktailImg img:hover{
+        transform:scale(1.07);
+    }
+
+}
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px){
+    .titleContainer{
+        padding: 0 1em;
+    }
+
+    .mcktdCocktails{
+        font-size: 175%;
+    }
+
+    .cocktailList{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cocktailImg img:hover{
+        transform:scale(1.08);
+    }
+}
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px){
+    .titleContainer{
+        padding: 0 2em;
+        margin-top: 6em;
+        margin-bottom: 2em;
+    }
+    .mcktdCocktails{
+        font-size: 110%; 
+    }
+
+    .green{
+        font-size: 160%;
+    }
+
+    .cocktailList{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
