@@ -98,6 +98,10 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
         padding: 0 4em;
     }
 
+    .cocktailImg img:hover{
+        transform:scale(1.06);
+    }
+
 }
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px){
@@ -110,6 +114,10 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
     }
     .cocktailList{
         grid-template-columns: repeat(5, 1fr);
+    }
+
+    .cocktailImg img:hover{
+        transform:scale(1.07);
     }
 
 }
@@ -125,6 +133,10 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
 
     .cocktailList{
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cocktailImg img:hover{
+        transform:scale(1.08);
     }
 }
 /* Small phones: from 0 to 480px */

@@ -1,11 +1,15 @@
-<h1>Your Cocktails & Mocktails
-</h1>
-<ul>
- <li *ngFor="let fileName of fileList$ | async" >
-   {{fileName}}&nbsp;&nbsp;
-   <figure class="cocktailImg">
-    <img src="../../../assets/Images/{{fileName}}"> 
-  </figure>
-   <span (click)="remove(fileName)">remove</span>
- </li>
-</ul>
+<section>
+<h1>Your Cocktails and Mocktails</h1>
+<hr>
+  <div class="files">
+  <ul>
+    <li *ngFor="let fileName of fileList$ | async" >
+      {{fileName}}&nbsp;&nbsp;
+      <figure class="cocktailImg">
+        <img src="../../../assets/Images/{{fileName}}"> 
+      </figure>
+      <a (click)="remove(fileName)">remove</a>
+    </li>
+  </ul>
+</div>
+</section>
