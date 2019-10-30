@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 
 import { Cocktail } from './../_class/cocktails-module';
 import { Location } from '@angular/common';
@@ -16,8 +16,8 @@ export class CocktailsRecipeComponent implements OnInit {
   public cocktail: Cocktail;
 
   constructor(private route: ActivatedRoute,
-              private cocktailsService: CocktailsService,
-              private location: Location, ) { }
+    private cocktailsService: CocktailsService,
+    private location: Location, ) { }
 
   ngOnInit() {
     // tslint:disable-next-line: no-string-literal
@@ -28,4 +28,5 @@ export class CocktailsRecipeComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { first } from 'rxjs/operators';
 import { UserService, AuthenticationService } from '../_services';
 
@@ -10,9 +10,9 @@ import { UserService, AuthenticationService } from '../_services';
 })
 
 export class UserProfileComponent implements OnInit {
-    // currentUser: any;
-    users = [];
-    imageUrl: string = "../assets/Images/UserImage.png";
+
+    @Input() users = [];
+
     public currentUser;
     constructor(
         private authenticationService: AuthenticationService,
