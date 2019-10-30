@@ -1,3 +1,36 @@
-*{
-    color: #000;
+// Colors
+$logoColor_1: #DA2864;
+$LogoColor_2: #ec6091;
+$LogoColor_3: #f2a7be;
+$LogoColor_4: #9ae1e2;
+$LogoColor_5: #16a5a3;
+$Background_Color: #1c1c1d;
+$Background_ColorOp65: #1c1c1d65;
+$Background_ColorOp90: #1c1c1d90;
+$TextColor: #fff;
+$TextColor_Dark: #000;
+
+*{color: $Background_Color;}
+
+.termsAndConditions{
+    margin: 4%;
+}
+
+h1{
+    margin-bottom: 1.25em;
+    font-size: 180%;
+}
+
+h2{
+    margin-bottom: 1em;
+    font-size: 120%;
+}
+
+p{
+    font-size: 100%;
+    margin-bottom: 0.75em;
+}
+
+strong{
+    font-size: 90%;
 }
