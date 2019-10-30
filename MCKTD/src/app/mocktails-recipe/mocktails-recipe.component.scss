@@ -97,7 +97,6 @@ hr{
   transform: scale(1.05);
 }
 
-
 // btn 
 .btn{
   color: $TextColor;
@@ -124,6 +123,11 @@ hr{
   background-color: $LogoColor_4;
   border: 1px solid $LogoColor_4;
   color: $TextColor_Dark;
+}
+
+.ratingCocktail{
+  text-align: center;
+  color:rgb(8, 8, 8);
 }
 
 // Media_Queries
