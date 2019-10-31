@@ -75,11 +75,6 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
     width: auto;
     float: left;
     margin: 5px 0;
-
-.navbar-nav{
-    display: flex;
-    flex-direction: row;
-    padding: 2% 6%;
 }
 
 .nav-item:hover,
@@ -142,5 +137,4 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
     i{
         font-size: 70%;
     }
-}
 }
