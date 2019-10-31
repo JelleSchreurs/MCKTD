@@ -16,6 +16,7 @@ export class RatingComponent implements OnInit {
     this.rating = rating;
     this.ratingClick.emit({
       itemId: this.itemId,
+      // tslint:disable-next-line: object-literal-shorthand
       rating: rating
     });
   }

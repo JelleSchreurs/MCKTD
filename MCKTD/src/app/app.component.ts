@@ -13,6 +13,12 @@ export class AppComponent {
   title = 'MCKTD';
   currentUser: User;
 
+  navbarOpen = false;
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+
   constructor(
     private router: Router,
     private authenticationService: AuthenticationService,
@@ -20,7 +26,6 @@ export class AppComponent {
   ) {
     this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
   }
-
 
   logout() {
     this.authenticationService.logout();

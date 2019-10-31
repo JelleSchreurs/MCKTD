@@ -1,5 +1,4 @@
 <nav class="navbar sticky navbar-dark bg-dark" *ngIf="currentUser">
-
     <div class="navbar-nav">
         <a class="item nav-item" routerLink="/">Home</a>
         <a class="item nav-item" routerLink="/cocktails">Cocktails</a>
@@ -9,7 +8,16 @@
         <a class="item logout" (click)="logout()">Logout</a>
     </div>
 
+    <div class="mobileNavbar">
+        <a routerLink="/"><i class="icon ion-ios-home"></i></a>
+        <a routerLink="/cocktails"><i class="icon ion-ios-wine"></i></a>
+        <a routerLink="/mocktails"><i class="icon ion-ios-pint"></i></a>
+        <a routerLink="/contact"><i class="icon ion-ios-add-circle-outline"></i></a>
+        <a routerLink="/user-profile"><i class="icon ion-ios-person"></i></a>
+        <a (click)="logout()"><i class="icon ion-ios-close-circle"></i></a>
+    </div>
 </nav>
+
 
 <div class="login">
     <div class="bodyContainer">

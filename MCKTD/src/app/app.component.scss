@@ -69,6 +69,19 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
     padding: 2% 6%;
 }
 
+.mcktdLogo { 
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    padding: 2% 6%;
+}
+
 .nav-item:hover,
 .nav-item:active{
     background: $LogoColor_4;
@@ -80,17 +93,11 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
     text-decoration: underline $LogoColor_5;
 }
 
+.mobileNavbar{ display: none;}
+
 // Media_Queries
 /* Big tablet to 1200px (widths smalle than 1140px */
 @media only screen and (max-width: 1200px){
-    .navbar{
-        width: 100%;
-        height: 10%;
-    }
-
-    .item{
-        padding: 1em;
-    }
 }
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px){
@@ -98,9 +105,42 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
 }
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px){
+    .navbar-nav{ display: none;}
 
+    .navbar{
+        height: 10%;
+        margin-top: 90vh;
+    }
+
+    .mobileNavbar{
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 1em;
+    }
+
+    .mcktdLogo { 
+        height: 7%;
+        width: auto;
+    }
+
+    .mobileNav {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    i{
+        font-size: 80%;
+    }
 }
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px){
-
+    i{
+        font-size: 70%;
+    }
+}
 }

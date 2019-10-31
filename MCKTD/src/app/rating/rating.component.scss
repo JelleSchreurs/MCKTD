@@ -1,7 +1,13 @@
+// Colors
+$Color_1: #f70;
+$Color_2: gold;
+$Color_3: #ea0;
 
 .rating {
-float: left;
-width: 50%;
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-evenly;
+width: 100%;
 }
 
 .rating:not(:checked) > input {
@@ -27,17 +33,20 @@ width: 50%;
 }
 
 .rating > input:checked ~ label {
-    color: #f70;
+    color: $Color_1;
+    filter:grayscale(35%);
 }
 
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
-    color: gold;
+    color: $Color_2;
+    filter:grayscale(35%);
 }
 
 
 .rating > input:checked ~ label:hover,
 .rating > input:checked ~ label:hover ~ label,
 .rating > label:hover ~ input:checked ~ label {
-    color: #ea0;
+    color: $Color_3;
+    filter:grayscale(35%);
 }
