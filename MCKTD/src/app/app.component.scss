@@ -77,12 +77,6 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
     margin: 5px 0;
 }
 
-.navbar-nav{
-    display: flex;
-    flex-direction: row;
-    padding: 2% 6%;
-}
-
 .nav-item:hover,
 .nav-item:active{
     background: $LogoColor_4;
