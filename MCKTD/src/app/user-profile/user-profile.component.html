@@ -9,26 +9,26 @@
     <div>
 
     </div>
-        <div class="personInfo">
-            <figure class="personPic">
-                <img src="../../assets/Images/bar-bartender.jpg">
-            </figure>
+    <div class="personInfo">
+        <figure class="personPic">
+            <img src="../../assets/Images/bar-bartender.jpg">
+        </figure>
 
-            <div class="data">
-                <h1>Hi {{currentUser.userName}}</h1>
-                <hr>
-                <br>
-                <label><span>Username: </span>{{currentUser.userName}} </label>
-                <label><span>Firstname: </span>{{currentUser.firstName}} </label>
-                <label><span>Lastname: </span>{{currentUser.lastName}}</label>
-                <label><span>Email: </span>{{currentUser.email}}</label>
-            </div>
+        <div class="data">
+            <h1>Hi {{currentUser.userName}}</h1>
+            <hr>
+            <br>
+            <label><span>Username: </span>{{currentUser.userName}} </label>
+            <label><span>Firstname: </span>{{currentUser.firstName}} </label>
+            <label><span>Lastname: </span>{{currentUser.lastName}}</label>
+            <label><span>Email: </span>{{currentUser.email}}</label>
         </div>
-            <!--<button (click)="deleteUser(user.id)" class="text-danger">Delete</button> -->
-       <!-- <app-update-profile></app-update-profile> -->
+    </div>
+    <!--<button (click)="deleteUser(user.id)" class="text-danger">Delete</button> -->
+    <!-- <app-update-profile></app-update-profile> -->
 
     <app-file-list></app-file-list>
-    <app-file-uploader></app-file-uploader> 
-    <img src="https://raw.githubusercontent.com/maciejtreder/angular-and-nodejs-data/step2/src/assets/loader.gif" *ngIf="displayLoader | async" />
+    <app-file-uploader></app-file-uploader>
+    <img src="https://raw.githubusercontent.com/maciejtreder/angular-and-nodejs-data/step2/src/assets/loader.gif"
+        *ngIf="displayLoader | async" />
 </section>
-

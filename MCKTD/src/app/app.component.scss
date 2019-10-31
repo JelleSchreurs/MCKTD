@@ -69,6 +69,13 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
     padding: 2% 6%;
 }
 
+.mcktdLogo { 
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+
 .navbar-nav{
     display: flex;
     flex-direction: row;
@@ -91,7 +98,6 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
 // Media_Queries
 /* Big tablet to 1200px (widths smalle than 1140px */
 @media only screen and (max-width: 1200px){
-
 }
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px){
@@ -136,4 +142,5 @@ $Background_Image: '../../assets/Images/white-cocktail.jpg';
     i{
         font-size: 70%;
     }
+}
 }
